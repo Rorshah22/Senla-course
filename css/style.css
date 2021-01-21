@@ -222,7 +222,6 @@ h3 {
 }
 /*section keng_help ================================================================*/
 .king_help_h3 {
-    /* height: 471px; */
     margin-top: 75px;
     margin-left: 14px;
     text-align: center;
@@ -230,16 +229,29 @@ h3 {
 .king_help {
     display: flex;
     justify-content: center;
-    margin-left: -90px;
-    height: 471px;
-    text-align: center;
+    margin-top: -33px;
+    margin-left: -63px;
+    height: 350px; 
+
 }
 .card_info {
     width: 166px;
-    margin-top: 47px;
+    margin-top: 49px;
     margin-left: 79px;
+    line-height: 22.4px;
+    text-align: center;
 }
+.photo_card {
+    background-color: #fff;
+}
+.photo_card-info {
 
+}
+#iconwrapper {
+    margin-left: 588px;
+    width: 14.5%;
+    height: 14.5%;
+}
 /*Стили для header только для 1440px*/
 @media screen and (max-width: 1440px) {
     .header {
@@ -270,6 +282,7 @@ h3 {
        font-weight: 600;
        line-height: 1.4em;
        color: #474747;
+
    }
 
 .btn, btn-main-face {
@@ -281,7 +294,6 @@ h3 {
     border: none;
     border-radius: 20px;
     background-color: #FBC832;
-    ;
 }
 .dog {
     position: absolute;
@@ -295,9 +307,8 @@ h3 {
     left: 607px;
     width: 483px;
     height: 469px;
-
 }
-.background__img{
+.background__img {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -343,16 +354,14 @@ h3 {
     border-radius: 50%;
 }
 .promo_footer-text{
-    margin-top: 100px;
+    margin-top: 99px;
     margin-left: 350px;
-    width: 385px;
 }
 .promo_h2{
-    margin-left: 5px;
-    text-align: center;
+    line-height: 34px;
     font-size: 28px;
     color: #C78100;
-
+}
 }
 /*Стили для header только для 1024px*/
 @media screen and (max-width: 1024px) {
