@@ -43,43 +43,39 @@
 }
 
 /*Подключаем общие стили==================================*/
-body  {
+body {
   font-family: Gilroy, serif;
   background-color: #f6f6f6;
 }
 /* Обвертка */
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
 }
 /* Контейнер для контента */
 .container {
   margin: 0 auto;
   max-width: 1146px;
-
 }
 
 /* Header==================================================== */
 a {
   text-decoration: none;
-  width: 100%;
   font-weight: 600;
   line-height: 16px;
   font-size: 16px;
   color: #242424;
 }
-/* Элементы меню */
+/* Элементы меню============================================== */
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin: 0px;
   padding: 39px 0px 0px 0px;
-  
 }
-.menu__box  {
+.menu__box {
   display: flex;
   list-style-type: none;
   padding: 0px;
@@ -88,12 +84,12 @@ a {
   margin-left: 32px;
 }
 .menu__item-3 {
-   margin-left: 194px;
+  margin-left: 194px;
 }
 .menu__item-4 {
   margin-left: 31px;
 }
-/* Картинка фона */
+/* Картинка фона ======================================================*/
 .img__background {
   position: relative;
 }
@@ -102,27 +98,114 @@ a {
   z-index: -1;
   right: 0px;
 }
-/* Иконки соцсетей */
+/* Иконки соцсетей =========================================================*/
+.icon__social svg {
+  fill: #ffffff;
+}
+.icon__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
 .icon__social-vk {
-  display: block;
-  margin-left: 141.5px;
-  /* width: 32px; */
-  border-radius: 2px solid #000;
+  margin-left: 289px;
+}
+.icon__social-insta {
+  margin-left: 29px;
+}
+/* Main==================================================================== */
+/* Section promo=========================================================== */
+.promo {
+  margin-top: 71px;
+}
+.promo__title {
+  font-weight: 700;
+  font-size: 72px;
+  color: #242424;
+}
+.promo__h1 {
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6b6b6b;
+}
+.promo__text {
+  margin-top: 0px;
+  width: 659px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #474747;
+}
+.promo__text-info {
+  margin-top: 44px;
+  width: 428px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #c78100;
+}
+.promo__img{
+  position: relative;
+  top: -91px;
+  left: 497px;
+}
+/* Кнопка ===============================================================*/
+.btn {
+  text-decoration: none;
+  height: 42px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  background: #fbc832;
+  border-radius: 58px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #FFDF86;
+}
+.btn:active {
+  background-color: #FFBB0C;
+}
+.promo_btn {
+  margin-top: 21px;
+  width: 182px;
+  color: #000000;
+}
+/* Надпись "Я буду лучшим другом" */
+.promo__background-img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  margin-left: -110px;
+  z-index: -1;
+}
+.svg_friend {
+  margin-top: -2px;
+  margin-left: 296px;
 }
 
-@media screen and  (max-width:639px) {
+@media screen and (max-width: 639px) {
   .container {
     max-width: 300px;
   }
-
+.promo__title {
+  font-size: 30px;
+}
   .menu__box {
     display: none;
   }
   .img__background {
-    position:static;
+    position: static;
   }
 }
-
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .container {
@@ -132,7 +215,7 @@ a {
     display: none;
   }
   .img__background {
-    position:static;
+    position: static;
   }
 }
 /* Стили от 768px до 1023px */
@@ -143,27 +226,43 @@ a {
   .menu__box {
     display: none;
   }
- 
+  .icon__social {
+    margin-top: -24px;
+    width: 40px;
+    height: 40px;
+  }
+  .icon__social-vk {
+    margin-left: 390px;
+  }
+  .icon__social-insta {
+    margin-left: 28px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1269px) {
   .container {
     max-width: 804px;
     margin-left: 0 auto;
-}
-.menu__item-3 {
-  margin-left: 52px;
-}
+  }
+  .menu__item-3 {
+    margin-left: 52px;
+  }
 
+  .icon__social-vk {
+    margin-left: 117px;
+  }
+  .icon__social-insta {
+    margin-left: 28px;
+  }
+/* Надпись "Я буду лучшим другом" */
+.promo__background-img {
+  width: 74.2%;
+}
 }
 /* Стили от 1270px до 1366px */
 @media screen and (min-width: 1270px) and (max-width: 1366px) {
-
 }
 @media screen and (max-width: 1440px) {
-  
 }
 
-@media screen and (max-width:1920px) {
-  
+@media screen and (max-width: 1920px) {
 }
-

@@ -1,0 +1,331 @@
+
+.header {
+    display: flex;
+    margin-top: 38px;
+    /* justify-content: center; */
+   
+    /* margin-left: 387px; */
+    font-weight: 600;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+    /* padding-left: 0%; */
+    font-weight: 600;
+}
+
+.nav-left {
+    padding-left: 32px;
+}
+.nav-right {
+    margin-left: 195px;
+}
+.nav-contacts{
+    margin-left: 31px;
+}
+
+.nav-icon-top {
+    margin-left: 289px;
+}
+.insta{
+    margin-left: 25px;
+}
+
+/*Стили для main*/
+.promo {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 387px; */
+}
+.promo_footer {
+    margin-top: 272px;
+    margin-left: -387px;
+    background-color: #ffffff;
+}
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 69px;
+    margin-bottom: 0px;
+    color: #242424;
+}
+h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #242424;
+}
+.span__main-face {
+    margin-top: 2px;
+    display: inline-block;
+    font-weight: 300;
+    color: #6B6B6B;
+}
+.promo__text{
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: #474747; 
+    width: 659px;
+}
+.promo__text_info {
+    margin-top: 29px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 450px;
+    line-height: 29px;
+    color: #C78100;
+}
+
+
+.dog {
+    position: absolute;
+    top: 0px;
+    left: 815px;
+    z-index: -1;
+}
+.cat {
+    position: absolute;
+    top: 470px;
+    left: 884px;
+    width: 483px;
+    height: 469px;
+
+}
+.btn, btn-main-face {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 182px;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FBC832;
+    
+}
+.background__img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    top: 374px;
+    left: 277px;
+}
+.svg_friend {
+    margin-top: -2px;
+    margin-left: 296px;
+}
+.promo_footer {
+    display: flex;
+    /*height: 100%;*/
+    margin-top: 272px;
+    /* margin-left: -110px; */
+    height: 650px;
+    background-color: #ffffff;
+}
+.promo_box {
+    /*display: flex;*/
+    margin-top: 53px;
+    width: 605px;
+    height: 521px;
+    background-color: #FFC41E;
+}
+.promo_circle  {
+
+    margin-left: 332px;
+    width: 521px;
+    height: 521px;
+    border-radius: 50%;
+    background-color: #FFC41E;
+}
+.circle_dog {
+    margin-top: 31px;
+    margin-left: 34px;
+}
+.circle_cat {
+    position: absolute;
+    margin-top: 296px;
+    margin-left: -193px;
+    border: 8px solid #EEBF3A;
+    border-radius: 50%;
+}
+.promo_footer-text{
+    margin-top: 100px;
+    margin-left: 342px;
+    width: 466px;
+}
+.promo_h2{
+    line-height: 34px;
+    text-align: center;
+    font-size: 28px;
+    color: #C78100;
+}
+.promo_footer-info {
+    margin-top: 23.5px;
+    color: #242424;
+    line-height: 22.4px;
+    font-weight: 400;
+    font-size: 16px;
+    width:467px;
+}
+/*section keng_help ================================================================*/
+.king_help_h3 {
+    margin-top: 75px;
+    margin-left: 14px;
+    text-align: center;
+}
+.king_help {
+    display: flex;
+    justify-content: center;
+    margin-top: -33px;
+    margin-left: -63px;
+    height: 350px; 
+
+}
+.card_info {
+    width: 166px;
+    margin-top: 49px;
+    margin-left: 79px;
+    line-height: 22.4px;
+    text-align: center;
+}
+.photo_card {
+    background-color: #fff;
+}
+.photo_card-info {
+
+}
+#iconwrapper {
+    margin-left: 588px;
+    width: 14.5%;
+    height: 14.5%;
+}
+/*Стили для header только для 1440px*/
+@media screen and (max-width: 1440px) {
+    .header {
+        display: flex;
+        margin-top: 39px;
+        padding: absolute;
+        margin-left: 144px;
+    }
+    .nav-contacts{
+        margin-left: 31px;
+    }
+}
+/*Стили для header только для 1366px*/
+@media screen and (max-width: 1366px) {
+    .header {
+        display: flex;
+        margin-top: 39px;
+        padding: absolute;
+        margin-left: 110px;
+    }
+    .promo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 110px;
+    }
+    .p__main-face {
+       margin-top: 10px;
+       font-weight: 600;
+       line-height: 1.4em;
+       color: #474747;
+
+   }
+
+.btn, btn-main-face {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 182px;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FBC832;
+}
+.dog {
+    position: absolute;
+    top: 0px;
+    left: 538px;
+    z-index: -1;
+}
+.cat {
+    position: absolute;
+    top: 470px;
+    left: 607px;
+    width: 483px;
+    height: 469px;
+}
+.background__img {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    top: 374px;
+    left: 0px;
+}
+.svg_friend {
+    margin-left: 296px;
+}
+.promo_footer {
+    display: flex;
+    /*height: 100%;*/
+    margin-top: 272px;
+    margin-left: -110px;
+    height: 650px;
+    background-color: #ffffff;
+}
+.promo_box {
+    /*display: flex;*/
+    margin-top: 53px;
+    width: 343px;
+    height: 521px;
+    background-color: #FFC41E;
+}
+.promo_circle  {
+
+    margin-left: 78px;
+    width: 521px;
+    height: 521px;
+    border-radius: 50%;
+    background-color: #FFC41E;
+}
+.circle_dog {
+    margin-top: 31px;
+    margin-left: 34px;
+}
+.circle_cat {
+    position: absolute;
+    margin-top: 296px;
+    margin-left: -193px;
+    border: 8px solid #EEBF3A;
+    border-radius: 50%;
+}
+.promo_footer-text{
+    margin-top: 99px;
+    margin-left: 350px;
+}
+.promo_h2{
+    line-height: 34px;
+    font-size: 28px;
+    color: #C78100;
+}
+}
+/*Стили для header только для 1024px*/
+@media screen and (max-width: 1024px) {
+    .header {
+        display: flex;
+        margin-top: 39px;
+        padding: absolute;
+        margin-left: 110px;
+    }
+}
+/*Стили для header только для 1024px*/
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        margin-top: 39px;
+        padding: absolute;
+        margin-left: 144px;
+    }
+}
