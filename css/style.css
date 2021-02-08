@@ -46,13 +46,14 @@
 body {
   font-family: Gilroy, serif;
   background-color: #f6f6f6;
-}
-/* Обвертка */
-.wrapper {
   position: relative;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
+  line-height: 140%;
+  color: #242424;
+}
+a {
+  text-decoration: none;
+  color: #474747;
 }
 /* Контейнер для контента */
 .container {
@@ -61,8 +62,7 @@ body {
 }
 
 /* Header==================================================== */
-a {
-  text-decoration: none;
+.header a {
   font-weight: 600;
   line-height: 16px;
   font-size: 16px;
@@ -120,7 +120,7 @@ a {
 /* Main==================================================================== */
 /* Section promo=========================================================== */
 .promo {
-  margin-top: 71px;
+  margin-top: 97px;
 }
 .promo__title {
   font-weight: 700;
@@ -128,7 +128,7 @@ a {
   color: #242424;
 }
 .promo__h1 {
-  margin-top: 0px;
+  margin-top: -41px;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -149,17 +149,15 @@ a {
   line-height: 29px;
   color: #c78100;
 }
-.promo__img{
-  position: relative;
-  top: -91px;
-  left: 497px;
-}
+
 /* Кнопка ===============================================================*/
 .btn {
   text-decoration: none;
   height: 42px;
   font-size: 20px;
-  line-height: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   font-weight: 500;
   background: #fbc832;
   border-radius: 58px;
@@ -168,15 +166,26 @@ a {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #FFDF86;
+  background-color: #ffdf86;
 }
 .btn:active {
-  background-color: #FFBB0C;
+  background-color: #ffbb0c;
 }
 .promo_btn {
   margin-top: 21px;
   width: 182px;
   color: #000000;
+}
+.btn_secondary {
+  height: 42px;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid #ffc41e;
+  border-radius: 58px;
+  background-color: #f6f6f6;
+  padding-right: 33px;
+  padding-left: 32px;
+  text-align: center;
 }
 /* Надпись "Я буду лучшим другом" */
 .promo__background-img {
@@ -191,14 +200,288 @@ a {
   margin-top: -2px;
   margin-left: 296px;
 }
+/* Кот на фоне */
+.box__img {
+  position: relative;
+}
+.promo__picture {
+  position: absolute;
+  top: 140px;
+  left: 498px;
+  z-index: 1;
+}
+/* подвал секции promo */
+
+.promo__footer {
+  margin-top: 273px;
+  height: 650px;
+  background-color: #ffffff;
+}
+/* Декоративный элемент слева */
+
+.box {
+  display: flex;
+}
+.promo__box {
+  top: 54px;
+  position: relative;
+  width: 50%;
+}
+.promo__box::before {
+  content: "";
+  position: absolute;
+  right: 61%;
+  width: 50vw;
+  height: 521px;
+  top: 0;
+  bottom: 0;
+  background-color: #ffc41e;
+}
+.promo__box::after {
+  content: "";
+  display: block;
+}
+.circle__image {
+  left: -5%;
+  border: 28px solid;
+  border-bottom: 29px solid;
+  border-radius: 50%;
+  color: #ffc41e;
+}
+.circle__image-small {
+  border: 8px solid #ffc41e;
+  border-bottom: 9px solid #ffc41e;
+  border-radius: 50%;
+}
+.promo__circle-wrapper {
+  position: relative;
+}
+.promo__circle-wrapper-within {
+  position: absolute;
+  left: auto;
+  bottom: -16px;
+  right: 9%;
+  width: 40%;
+}
+
+.promo_h2,
+.promo__footer-info {
+  max-width: 476px;
+}
+.promo__h2 {
+  padding-top: 101px;
+  padding-left: 11px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  display: flex;
+  text-align: center;
+  color: #c78100;
+}
+.promo__footer_text {
+  margin-left: 9px;
+  padding-top: 3px;
+  font-weight: 400;
+  /* line-height: 140%; */
+  color: #242424;
+}
+/* Section как помочь */
+.title__help {
+  margin-top: 77px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+  color: #242424;
+}
+.king__help {
+  display: flex;
+}
+.card_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ffc41e;
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 21px;
+  margin-right: 79px;
+}
+.card_info p {
+  text-align: center;
+  width: 166px;
+  margin-top: 21px;
+}
+.card_box:hover {
+  box-shadow: 0px 2px 4px #cccccc;
+}
+.card_box:active {
+  background-color: #f8eccb;
+}
+/* рисуем разделительную линию */
+.dividing__stripp {
+  margin-top: 63px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+.dividing__stripp img {
+  position: relative;
+  width: 150px;
+}
+.dividing__stripp::before {
+  content: "";
+  display: block;
+  width: 50%;
+  position: absolute;
+  border-bottom: 1px solid #ffc41e;
+  top: 50%;
+  right: 55.1vw;
+}
+.dividing__stripp::after {
+  display: block;
+  width: 50%;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffc41e;
+  top: 50%;
+  left: 55.1vw;
+}
+
+.home__for {
+  display: flex;
+  margin-top: 67px;
+  padding-left: 175px;
+}
+
+.home__for-info {
+  padding-right: 97px;
+  /* margin-left: 38px; */
+  width: 389px;
+  flex-grow: 0;
+}
+.home__for h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  color: #242424;
+}
+.home__for p {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* Section photo__card============================================== */
+.photo__card h3 {
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+/* Делаем карточки на гридах */
+.photo__card-box {
+  display: grid;
+  grid-template: repeat(2, 2fr) / repeat(3, 1fr);
+  align-items: center;
+}
+.card_animal {
+  display: grid;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  height: 695px;
+  margin-top: 34px;
+  margin-bottom: 8px;
+  margin-right: 19px;
+  width: 368px;
+  background-color: #ffffff;
+}
+.card_animal figure {
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: -24px;
+}
+.card_animal figcaption {
+  padding-top: 2px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #242424;
+  border-bottom: 1px solid #d6d6d6;
+}
+.card_animal button {
+  margin: 0 auto;
+}
+
+.card_animal span {
+  margin-top: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 20px;
+}
+.card_animal p {
+  margin: 0px;
+  margin-top: -19px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 95px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.card_animal .btn {
+  position: relative;
+  top: 11px;
+  /* padding-top:10px; */
+}
+.card_animal .btn_secondary {
+  position: relative;
+  top: 3px;
+}
+.new_page-link {
+  display: inline-block;
+  border-bottom: 2px solid;
+  color: #ad7f00;
+}
+.new_page {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ad7f00;
+}
+.new_page-link::after{
+  content: "";
+  margin-top: 13px;
+  width: 7px;
+  height: 7px;
+  border: solid;
+  border-bottom: 2px;
+  border-left: 2px;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+}
 
 @media screen and (max-width: 639px) {
   .container {
     max-width: 300px;
   }
-.promo__title {
-  font-size: 30px;
-}
+  .promo__title {
+    font-size: 30px;
+  }
   .menu__box {
     display: none;
   }
@@ -253,10 +536,10 @@ a {
   .icon__social-insta {
     margin-left: 28px;
   }
-/* Надпись "Я буду лучшим другом" */
-.promo__background-img {
-  width: 74.2%;
-}
+  /* Надпись "Я буду лучшим другом" */
+  .promo__background-img {
+    width: 74.2%;
+  }
 }
 /* Стили от 1270px до 1366px */
 @media screen and (min-width: 1270px) and (max-width: 1366px) {
