@@ -5,6 +5,7 @@
     url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
@@ -12,6 +13,7 @@
     url("../fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
@@ -19,6 +21,7 @@
     url("../fonts/Gilroy-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
@@ -26,6 +29,7 @@
     url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
@@ -33,6 +37,7 @@
     url("../fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
@@ -40,6 +45,7 @@
     url("../fonts/Gilroy-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 /*Подключаем общие стили==================================*/
@@ -157,7 +163,7 @@ a {
   font-size: 20px;
   padding-left: 32px;
   padding-right: 32px;
-
+  outline: none;
   font-weight: 500;
   background: #fbc832;
   border-radius: 58px;
@@ -186,6 +192,7 @@ a {
   padding-right: 33px;
   padding-left: 32px;
   text-align: center;
+  outline: none;
 }
 /* Надпись "Я буду лучшим другом" */
 .promo__background-img {
@@ -324,14 +331,13 @@ a {
   background-color: #f8eccb;
 }
 /* рисуем разделительную линию */
+
 .dividing__stripp {
-  margin-top: 63px;
   position: relative;
   text-align: center;
-  width: 100%;
-  /* margin: 0 auto; */
   overflow: hidden;
 }
+
 .dividing__stripp img {
   position: relative;
   width: 150px;
@@ -354,7 +360,17 @@ a {
   top: 50%;
   left: 55.1vw;
 }
-
+.home {
+  margin-top: 63px;
+}
+.support {
+  top: 47px;
+  margin-top: 58px;
+}
+.support img {
+  width: 130px;
+}
+/* =================================================== */
 .home__for {
   display: flex;
   margin-top: 67px;
@@ -449,31 +465,116 @@ a {
   position: relative;
   top: 3px;
 }
-.new_page-link {
-  display: inline-block;
-  border-bottom: 2px solid;
-  color: #ad7f00;
-}
 .new_page {
   display: flex;
   justify-content: center;
+  margin-top: 9px;
+  margin-left: -38px;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   color: #ad7f00;
 }
-.new_page-link::after{
+.new_page-link {
+  display: inline-block;
+  height: 30px;
+  border-bottom: 2px solid;
+  color: #ad7f00;
+}
+
+.new_page-link::after {
   content: "";
+  display: inline-block;
   margin-top: 13px;
+  margin-left: 13px;
   width: 7px;
   height: 7px;
   border: solid;
   border-bottom: 2px;
   border-left: 2px;
-  display: inline-block;
+  position: absolute;
   padding: 2px;
   transform: rotate(45deg);
 }
+.photo_card_footer {
+  display: flex;
+  padding-top: 55px;
+  padding-left: 195px;
+}
+.photo_card_footer p {
+  max-width: 583px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242424;
+}
+.icon-photo_card {
+  display: flex;
+  align-items: center;
+}
+.photo_card_footer svg {
+  fill: #e8a700;
+}
+.photo_card_footer .icon__social {
+  margin-left: 36px;
+  border: 2px solid #ffc41e;
+  fill: #ad7f00;
+}
+.requisites {
+  height: 681px;
+  background-color: #ffffff;
+}
+.requisites h3 {
+  margin-top: 99px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+}
+.requisites-intro {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 758px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b6b6b;
+}
+
+.requisites_article {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -18px;
+}
+.requisites_article article {
+  width: 389px;
+}
+.requisites_article h4 {
+  margin-top: 42px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.requisites_article ul {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  list-style: none;
+  margin-top: 25px;
+  padding: 0;
+}
+.requisites_article li {
+  margin-top: 6px;
+}
+.requisites_article .btn {
+  margin-top: 10px;
+}
+.requisites_article ol{
+  padding-left: 16px;
+}
+
 
 @media screen and (max-width: 639px) {
   .container {
