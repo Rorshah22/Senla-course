@@ -1,0 +1,56 @@
+/* Header==================================================== */
+.header a {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 16px;
+  color: #242424;
+}
+/* Элементы меню============================================== */
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 39px 0px 0px 0px;
+}
+.menu__box {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+}
+.menu__item-2 {
+  margin-left: 32px;
+}
+.menu__item-3 {
+  margin-left: 194px;
+}
+.menu__item-4 {
+  margin-left: 31px;
+}
+/* Картинка фона ======================================================*/
+.img__background {
+  position: relative;
+}
+.img__background-header {
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+}
+/* Иконки соцсетей =========================================================*/
+.icon__social svg {
+  fill: #ffffff;
+}
+.icon__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.icon__social-vk {
+  margin-left: 289px;
+}
+.icon__social-insta {
+  margin-left: 29px;
+}

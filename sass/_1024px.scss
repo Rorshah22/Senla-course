@@ -1,2 +1,20 @@
-/*dfdf d*/
-/*sdsdsd*/
+@media screen and (min-width: 1024px) and (max-width: 1269px) {
+  .container {
+    max-width: 804px;
+    margin-left: 0 auto;
+  }
+  .menu__item-3 {
+    margin-left: 52px;
+  }
+
+  .icon__social-vk {
+    margin-left: 117px;
+  }
+  .icon__social-insta {
+    margin-left: 28px;
+  }
+  /* Надпись "Я буду лучшим другом" */
+  .promo__background-img {
+    width: 74.2%;
+  }
+}
