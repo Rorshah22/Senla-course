@@ -1,33 +1,83 @@
-@media screen and (min-width:320px) and (max-width: 639px) {
- 
+@media screen and (min-width: 360px) and (max-width: 639px) {
   .container {
-    max-width: 300px / 360px *100%;
+    max-width: 300px / 360px * 100%;
   }
-  .promo__title {
-    font-size: 30px;
-  }
+
   .menu__box {
     display: none;
   }
-  .img__background {
-    position: static;
-  }
-  @import '../components/burger';
+
+  @import "../components/burger";
   .menu__btn {
-    top:32px;
+    top: 32px;
     left: 3%;
     width: 24px;
     height: 16px;
   }
-  .header{
-    .social_list{
+  .header {
+    .social_list {
       margin-top: 0px;
       margin-left: (256px / 360px) * 100%;
-        .icon{
-          width: 32px;
-          height: 32px;
-          font-size: 19px;
-          margin-right: 19px;
+      .icon {
+        width: 32px;
+        height: 32px;
+        font-size: 19px;
+        margin-right: 19px;
       }
-    }}
+    }
+    .img__background-header {
+      right: -10%;
+    }
+  }
+
+  .promo {
+    margin-top: -12px;
+  }
+  .promo__h1 {
+    font-size: 12px;
+    margin-top: -31px;
+    width: 211px;
+    line-height: 14px;
+  }
+
+  .promo__text {
+    margin-top: 21px;
+    width: 158px;
+    font-size: 14px;
+    line-height: 144%;
+
+  }
+
+  .promo__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .promo__text-info {
+    margin-top: 92px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    width: 300px;
+  }
+  .promo_btn {
+    margin-top: 4px;
+    margin-left: 18%;
+    font-size: 18px;
+    padding: 0 17.54px;
+    height: 30px;
+    width: 194px;
+  }
+  .promo__picture {
+    top: -83px;
+    left: 38.5%;
+  }
+  /* Надпись "Я буду лучшим другом" */
+  .container {
+    .promo__background-img {
+      top: 194px;
+      left: -30px;
+      background-size: 75.5% auto;
+  
+    }
+  }
 }

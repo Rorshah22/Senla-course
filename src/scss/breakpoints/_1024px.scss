@@ -13,21 +13,6 @@
   .icon__social-insta {
     margin-left: 28px;
   }
-  /* Надпись "Я буду лучшим другом" */
-  .promo__background-img {
-    margin-top: 10px;
-
-    svg{
-      width: 64.2%;
-      height: 64.2%;
-     
-    }
-    .svg_friend {
-      width: 51%;
-      margin-left: 219px;
-      margin-top: -10px;
-    }
-  }
 
   .header {
     .social_list {
@@ -61,4 +46,51 @@
     top: 74px;
     left: 453px / 1024px * 100%;
   }
+
+  /* Надпись "Я буду лучшим другом" */
+  .container {
+    .promo__background-img {
+      top: 166px;
+      left: 0px;
+      background-size: 55.5% auto;
+    }
+  }
+  .promo__footer{
+    margin-top: 106px;
+  }
+/* Декоративный элемент слева */
+.image-wrapper{
+  top: 38px;
+  position: relative;
+  width: 45%;
+  left: -20px;
+}
+.circle-big{
+  overflow: hidden;
+  border: 21px solid;
+  border-bottom: 18px solid;
+  border-radius: 50%;
+  color: #ffc41e;
+}
+.circle-small{
+  border: 5px solid #ffc41e;
+  border-bottom: 6px solid #ffc41e;
+  border-radius: 50%;
+}
+.promo__footer-info{
+  width: 329px;
+  margin-right: 72px;
+    .promo__h2{
+  padding-top: 54px;
+  font-size: 24px;
+    }
+    .promo__footer_text {
+      font-size: 16px;
+      
+      padding-top: 8px;
+    margin-bottom: -8px;
+    }
+}
+
+
 }

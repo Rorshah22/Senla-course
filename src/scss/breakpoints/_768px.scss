@@ -52,17 +52,10 @@
     left: 453px / 1024px * 100%;
   }
   /* Надпись "Я буду лучшим другом" */
-  .promo__background-img {
-    margin-top: -58px;
-
-    svg {
-      width: 48.2%;
-      height: 48.2%;
-    }
-    .svg_friend {
-      width: 44%;
-      margin-left: 149.4px;
-    
+  .container {
+    .promo__background-img {
+      top: 104px;
+      background-size: 79.5% auto;
     }
   }
 }

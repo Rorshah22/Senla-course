@@ -6,8 +6,6 @@
 @import "components/dividing_stripp";
 @import "inner";
 
-
-
 /*Подключаем общие стили==================================*/
 body {
   font-family: Gilroy, serif;
@@ -17,6 +15,7 @@ body {
   line-height: 140%;
   color: #242424;
 }
+
 a {
   text-decoration: none;
   color: #474747;
@@ -27,21 +26,21 @@ h3 {
   line-height: 24px;
   color: #242424;
 }
-/* Контейнер для контента */
+/* Контейнер */
 .container {
   margin: 0 auto;
   max-width: 1146px;
-} 
+}
 
 /* Main==================================================================== */
 /* Section promo=========================================================== */
 .promo {
+  position: relative;
   margin-top: 102px;
 }
 .promo__title {
   font-weight: 700;
   font-size: 72px;
-  // font-size: calc(30px + 16 * (100vw - 1146px));
   color: #242424;
 }
 .promo__h1 {
@@ -68,23 +67,24 @@ h3 {
 }
 
 /* Надпись "Я буду лучшим другом" */
-.promo__background-img {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin-top: 42px;
-  margin-left: -110px;
-  z-index: -1;
+.container {
+  position: relative;
+  .promo__background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/design/bestFriend.png);
+    background-repeat: no-repeat;
+    top: 184px;
+    left: -110px;
+  }
 }
-.svg_friend {
-  margin-top: -2px;
-  margin-left: 296px;
-}
+
 /* Кот на фоне */
 
 .box__img {
   position: relative;
-  
 }
 
 .promo__picture {
@@ -94,64 +94,86 @@ h3 {
   z-index: 1;
 }
 
-
 /* подвал секции promo */
 
 .promo__footer {
   margin-top: 273px;
   height: 650px;
   background-color: #ffffff;
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 /* Декоративный элемент слева */
 
-.box {
-  display: flex;
-}
-.promo__box {
-  top: 54px;
+.image-wrapper{
+  top:54px;
   position: relative;
-  width: 50%;
+  
+  width: 45%;
+  left: -25px;
+
 }
-.promo__box::before {
-  content: "";
-  position: absolute;
-  right: 61%;
+.image-wrapper::before{
+  content: '';
   width: 50vw;
-  height: 521px;
+  position: absolute;
+  right: 50%;
   top: 0;
   bottom: 0;
-  background-color: #ffc41e;
+  background-color: #FFC41E;
 }
-.promo__box::after {
-  content: "";
+.image-wrapper-main{
+  position: relative;
+}
+.image-wrapper-main::after{
+ background-image: url(../images/design/dogInPriason.png);
+ background-size: 100% 100%;
+}
+
+.image-wrapper-secondary{
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -5%;
+  right: -5%;
+  width: 45%;
+}
+.image-wrapper-secondary::after {
+  content: '';
   display: block;
+  padding-bottom: 100%;
+  background-image: url(../images/design/catInPriason.png);
+  background-size: 100% 100%;
 }
-.circle__image {
-  left: -5%;
+
+.circle-big{
+  overflow: hidden;
   border: 28px solid;
   border-bottom: 29px solid;
   border-radius: 50%;
   color: #ffc41e;
 }
-.circle__image-small {
+.circle-small{
   border: 8px solid #ffc41e;
   border-bottom: 9px solid #ffc41e;
   border-radius: 50%;
 }
-.promo__circle-wrapper {
-  position: relative;
-}
-.promo__circle-wrapper-within {
-  position: absolute;
-  left: auto;
-  bottom: -16px;
-  right: 9%;
-  width: 40%;
+
+.circle-big::after{
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+  height: 0;
 }
 
+// =============================================================
 .promo_h2,
 .promo__footer-info {
-  max-width: 476px;
+  width: 476px;
+  margin-right: 97px;
 }
 .promo__h2 {
   padding-top: 101px;
@@ -614,7 +636,6 @@ h3 {
     font-size: 28px;
     font-weight: 400;
   }
-
 }
 //Раздел thank
 .thank {

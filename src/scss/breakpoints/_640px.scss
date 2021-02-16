@@ -5,9 +5,7 @@
   .menu__box {
     display: none;
   }
-  .img__background {
-    position: static;
-  }
+
   @import "../components/burger";
   .menu__btn {
     top: 32px;
@@ -25,6 +23,9 @@
         font-size: 19px;
         margin-right: 19px;
       }
+    }
+    .img__background-header{
+      right: -34%;
     }
   }
 
@@ -65,19 +66,12 @@
     top: -22px;
     left: 65.5%;
   }
-  /* Надпись "Я буду лучшим другом" */
-  .promo__background-img {
-    margin-top: -92px;
 
-    svg {
-      width: 50%;
-      height: 50%;
-    }
-    .svg_friend {
-      width: 40%;
-      margin-left: 136.4px;
-      
+  /* Надпись "Я буду лучшим другом" */
+  .container {
+    .promo__background-img {
+      top: 98px;
+      background-size: 101.5% auto;
     }
   }
-
 }
