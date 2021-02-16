@@ -1,0 +1,64 @@
+@media screen and (min-width: 1024px) and (max-width: 1269px) {
+  .container {
+    max-width: 804px / 1024px * 100%;
+    margin: 0 auto;
+  }
+  .menu__item-3 {
+    margin-left: 52px;
+  }
+
+  .icon__social-vk {
+    margin-left: 117px;
+  }
+  .icon__social-insta {
+    margin-left: 28px;
+  }
+  /* Надпись "Я буду лучшим другом" */
+  .promo__background-img {
+    margin-top: 10px;
+
+    svg{
+      width: 64.2%;
+      height: 64.2%;
+     
+    }
+    .svg_friend {
+      width: 51%;
+      margin-left: 219px;
+      margin-top: -10px;
+    }
+  }
+
+  .header {
+    .social_list {
+      margin-left: 117px;
+    }
+  }
+  .promo {
+    margin-top: -6px;
+  }
+  .promo__title {
+    font-size: 64px;
+    margin-bottom: 69px;
+  }
+  .promo__h1 {
+    font-size: 14px;
+  }
+  .promo__text {
+    margin-top: 14px;
+    width: 461px;
+    font-size: 14px;
+  }
+  .promo__text-info {
+    font-size: 20px;
+    line-height: 24px;
+    width: 300px;
+  }
+  .promo_btn {
+    margin-top: 24px;
+  }
+  .promo__picture {
+    top: 74px;
+    left: 453px / 1024px * 100%;
+  }
+}

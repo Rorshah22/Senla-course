@@ -1,0 +1,68 @@
+/* Стили от 768px до 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 548px / 768px * 100%;
+  }
+  .header {
+    .social_list {
+      margin-top: 24px;
+      margin-left: 71%;
+
+      .icon {
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+        margin-right: 27px;
+      }
+    }
+  }
+
+  @import "../components/burger";
+  .menu__btn {
+    left: 9.5%;
+  }
+
+  .promo {
+    margin-top: -6px;
+  }
+  .promo__title {
+    font-size: 42px;
+    margin-top: 33px;
+    margin-bottom: 61px;
+  }
+  .promo__h1 {
+    font-size: 14px;
+    width: 311px;
+    line-height: 16px;
+  }
+  .promo__text {
+    font-size: 14px;
+    width: 311px;
+  }
+  .promo__text-info {
+    font-size: 16px;
+    line-height: 19px;
+    width: 204px;
+  }
+  .promo_btn {
+    margin-top: 26px;
+  }
+  .promo__picture {
+    top: -8px;
+    left: 453px / 1024px * 100%;
+  }
+  /* Надпись "Я буду лучшим другом" */
+  .promo__background-img {
+    margin-top: -58px;
+
+    svg {
+      width: 48.2%;
+      height: 48.2%;
+    }
+    .svg_friend {
+      width: 44%;
+      margin-left: 149.4px;
+    
+    }
+  }
+}

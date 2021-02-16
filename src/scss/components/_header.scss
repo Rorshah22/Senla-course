@@ -1,4 +1,9 @@
-/* Header==================================================== */
+/* 
+Header==================================================== */
+#menu__toggle {
+  display: none;
+}
+// =============================================
 .header a {
   font-weight: 600;
   line-height: 16px;
@@ -7,15 +12,14 @@
 }
 /* Элементы меню============================================== */
 .menu {
-  display: flex;
-  flex-direction: row;
-  margin: 0px;
-  padding: 39px 0px 0px 0px;
+  display: inline-flex;
+  position: relative;
 }
 .menu__box {
   display: flex;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 .menu__item-2 {
   margin-left: 32px;
@@ -29,28 +33,28 @@
 /* Картинка фона ======================================================*/
 .img__background {
   position: relative;
+
+
 }
 .img__background-header {
   position: absolute;
   z-index: -1;
   right: 0px;
 }
+
 /* Иконки соцсетей =========================================================*/
-.icon__social svg {
-  fill: #ffffff;
-}
-.icon__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-}
-.icon__social-vk {
-  margin-left: 289px;
-}
-.icon__social-insta {
-  margin-left: 29px;
+// social_list
+// _icon-vk
+.header{
+  .social_list{
+    display: inline-flex;
+    margin-top: 40px;
+    // margin-left: 287px;
+    margin-left: 25%;    
+    a {
+      margin-right: 28px;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
 }

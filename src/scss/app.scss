@@ -1,13 +1,12 @@
-@import "fonts";
-@import "header";
-@import "button";
-@import "footer";
-@import "dividing_stripp";
+@import "base/normalize";
+@import "base/fonts";
+@import "components/header";
+@import "components/button";
+@import "components/footer";
+@import "components/dividing_stripp";
+@import "inner";
 
-@import "360px";
-@import "640px";
-@import "768px";
-@import "1024px";
+
 
 /*Подключаем общие стили==================================*/
 body {
@@ -32,16 +31,17 @@ h3 {
 .container {
   margin: 0 auto;
   max-width: 1146px;
-}
+} 
 
 /* Main==================================================================== */
 /* Section promo=========================================================== */
 .promo {
-  margin-top: 97px;
+  margin-top: 102px;
 }
 .promo__title {
   font-weight: 700;
   font-size: 72px;
+  // font-size: calc(30px + 16 * (100vw - 1146px));
   color: #242424;
 }
 .promo__h1 {
@@ -81,15 +81,20 @@ h3 {
   margin-left: 296px;
 }
 /* Кот на фоне */
+
 .box__img {
   position: relative;
+  
 }
+
 .promo__picture {
   position: absolute;
   top: 140px;
   left: 498px;
   z-index: 1;
 }
+
+
 /* подвал секции promo */
 
 .promo__footer {
@@ -341,13 +346,11 @@ h3 {
   display: flex;
   align-items: center;
 }
-.photo_card_footer svg {
-  fill: #e8a700;
-}
-.photo_card_footer .icon__social {
-  margin-left: 36px;
-  border: 2px solid #ffc41e;
-  fill: #ad7f00;
+.icon-photo_card {
+  .social_list {
+    margin-top: -7px;
+    margin-left: 38px;
+  }
 }
 .requisites {
   height: 681px;
@@ -483,7 +486,7 @@ h3 {
     border-left: 34px solid #ffc41e;
     border-bottom: 26px solid #ffc41e;
     border-radius: 50%;
-    background-image: url(/img/Ellipse_3.png);
+    background-image: url(../images/design/Ellipse_3.png);
   }
   article {
     margin-left: 50%;
@@ -592,35 +595,33 @@ h3 {
     }
   }
 }
+//иконки соцсетей
 .social_list {
   display: flex;
   margin-top: 21px;
 
   a {
     display: flex;
-    // font-size: 31px;
+
     color: #e8a700;
     width: 44px;
-    height: 47px;
+    height: 44px;
     border: 2px solid #ffc41e;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     margin-right: 32px;
-  }
-  ._icon-vk {
-    font-size: 19px;
-  }
-  ._icon-instagram {
     font-size: 28px;
+    font-weight: 400;
   }
+
 }
 //Раздел thank
 .thank {
   display: flex;
   margin-top: 54px;
   height: 741px;
-  background-image: url(/img/footer-bg.jpg);
+  background-image: url(../images/design/footer-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -641,7 +642,7 @@ h3 {
       border-bottom-right-radius: 34vw;
     }
     .img-foot {
-      background-image: url(../img/img-foot.svg);
+      background-image: url(../images/design/img-foot.svg);
       position: absolute;
       height: 100%;
       background-repeat: no-repeat;
@@ -660,34 +661,11 @@ h3 {
     }
   }
 }
-
-// Footer=======================================
-.footer {
-  ul {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    margin-left: 67px;
-    list-style-type: none;
-
-    li {
-      display: inline-block;
-      font-weight: 600;
-      font-size: 14px;
-      margin-top: 35px;
-      padding: 0;
-      margin-left: 47px;
-      border-bottom: 1px solid #474747;
-    }
-  }
-  p {
-    margin-top: 24px;
-    font-size: 12px;
-    line-height: 140%;
-    text-align: center;
-  }
-  .footer_about li{
-    font-weight: 400;
-    line-height: 16px;
-  }
-}
+// Breakpoints
+@import "breakpoints/360px";
+@import "breakpoints/640px";
+@import "breakpoints/768px";
+@import "breakpoints/1024px";
+@import "breakpoints/1366px";
+@import "breakpoints/1440px";
+@import "breakpoints/1920px";

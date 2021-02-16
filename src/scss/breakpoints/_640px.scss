@@ -1,0 +1,83 @@
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .container {
+    max-width: 382px / 640px * 100%;
+  }
+  .menu__box {
+    display: none;
+  }
+  .img__background {
+    position: static;
+  }
+  @import "../components/burger";
+  .menu__btn {
+    top: 32px;
+    left: 10.5%;
+    width: 24px;
+    height: 16px;
+  }
+  .header {
+    .social_list {
+      margin-top: 0px;
+      margin-left: (495px / 640px) * 100%;
+      .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+        margin-right: 19px;
+      }
+    }
+  }
+
+  .promo {
+    margin-top: -6px;
+  }
+  .promo__title {
+    font-size: 30px;
+    margin-top: 33px;
+    margin-bottom: 48px;
+  }
+  .promo__h1 {
+    font-size: 12px;
+    width: 282px;
+    line-height: 14px;
+  }
+  .promo__text {
+    padding-top: 14px;
+    font-size: 14px;
+    width: 282px;
+  }
+  .promo__text-info {
+    margin-top: 155px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    width: 381px;
+  }
+  .promo_btn {
+    margin-top: 3px;
+    margin-left: 93px;
+    font-size: 18px;
+    padding: 0 17.54px;
+    height: 30px;
+    width: 194px;
+  }
+  .promo__picture {
+    top: -22px;
+    left: 65.5%;
+  }
+  /* Надпись "Я буду лучшим другом" */
+  .promo__background-img {
+    margin-top: -92px;
+
+    svg {
+      width: 50%;
+      height: 50%;
+    }
+    .svg_friend {
+      width: 40%;
+      margin-left: 136.4px;
+      
+    }
+  }
+
+}
