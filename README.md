@@ -5,5 +5,5 @@
 2. https://www.codecademy.com/profiles/4615455765
 ***
 Собственно сам сайт: 
-https://vigilant-lamarr-931143.netlify.app
+https://cranky-cori-fcb5cb.netlify.app/
  
