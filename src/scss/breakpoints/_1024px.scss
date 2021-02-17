@@ -149,4 +149,23 @@
 .home__for-info {
   padding-right: 74px;
 }
+
+//Grid card-box======================
+.photo__card-box {
+grid-gap: 69px;
+}
+.photo__card{
+  h3{
+    margin-top: 52px;
+    font-size: 24px;
+  }
+}
+.card_animal {
+   figure {
+    margin: 0 auto;
+    
+    margin-bottom: -21px;
+    padding: 17px;
+}
+}
 }

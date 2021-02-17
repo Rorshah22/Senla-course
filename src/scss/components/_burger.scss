@@ -1,5 +1,7 @@
 // Гамбургер
-
+.menu{
+  z-index: 10;
+}
   .menu__btn{
     display:flex;
     align-items: center;
@@ -42,7 +44,7 @@
     visibility: hidden;
     top:0;
     left: -100%;
-    width: 300px;
+    width: 100vw;
     height: 100%;
     margin: 0;
     padding: 80px 0;
@@ -50,6 +52,21 @@
     text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    ul{
+      margin-top: -61px;
+    }
+    li{
+      
+      border-bottom: 1px solid #ffc41e;
+    }
+  }
+  .menu__box::before{
+    content: "";
+    position: relative;
+    display: block;
+    top: -80px;
+    height: 72px;
+    background-color: #ffc41e;
   }
   .menu__item {
     display: block;
@@ -88,4 +105,9 @@
 }
 .menu__item {
   transition-duration: .25s;
+}
+.menu__item-2,
+.menu__item-3,
+.menu__item-4 {
+  margin-left: 0;
 }
