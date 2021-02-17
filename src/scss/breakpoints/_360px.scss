@@ -57,7 +57,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 19px;
-    width: 300px;
+    width: 100%;
   }
   .promo_btn {
     margin-top: 4px;
@@ -123,7 +123,31 @@
     }
   }
     /* Section как помочь */
-.title__help {
-  font-size: 24px;
-}
+
+  .title__help {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .king__help {
+    margin-top: 22px;
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    .help-items {
+      margin-left: 14px;
+      margin-right: 0px;
+      p {
+        width: 142px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 7px;
+        margin-left: -13px;
+      }
+  .help-items-img {
+   
+    width: 80px;
+    height: 80px;
+  }
+    }
+  }
 }

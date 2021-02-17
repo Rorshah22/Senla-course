@@ -5,7 +5,9 @@
   .menu__box {
     display: none;
   }
-
+  h3{
+    font-size: 16px;
+  }
   @import "../components/burger";
   .menu__btn {
     top: 32px;
@@ -52,7 +54,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 19px;
-    width: 381px;
+    width: 100%;
   }
   .promo_btn {
     margin-top: 3px;
@@ -102,7 +104,7 @@
     color: #ffc41e;
   }
   .promo__footer-info {
-    width: 382px;
+    width: 100%;
     margin-right: 0px;
     .promo__h2 {
       padding-top: 33px;
@@ -117,8 +119,73 @@
       line-height: 144%;
     }
   }
-    /* Section как помочь */
-.title__help {
-  font-size: 24px;
+  /* Section как помочь */
+  .help {
+    .container{
+      max-width: 78%;
+    }
+  }
+  .title__help {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .king__help {
+    margin-top: 28px;
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    .help-items {
+      margin-left: 9px;
+      margin-right: 0%;
+      p {
+        width: 142px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 9px;
+        margin-left: -20px;
+      }
+  .help-items-img {
+   
+    width: 80px;
+    height: 80px;
+  }
+    }
+  }
+
+  // ==================================
+  
+.home {
+  margin-top: 31px;
+}
+.dividing__stripp img {
+  position: relative;
+  width: 54px;
+}
+.dividing__stripp::before{
+  right: 56%;
+  
+}
+.dividing__stripp::after {
+left: 56%;
+}
+.home__for {
+flex-wrap: wrap;
+padding-left: 0;
+margin-top: 16px;
+}
+.home__for-info {
+  width: 100%;
+  padding-right: 0px;
+
+  h3{
+    height: 10%;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 141%;
+    margin-bottom: 23px;
+  }
 }
 }
