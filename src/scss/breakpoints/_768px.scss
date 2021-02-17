@@ -58,4 +58,49 @@
       background-size: 79.5% auto;
     }
   }
+  .promo__footer {
+    margin-top: 43px;
+    height: 523px;
+  }
+
+  .image-wrapper {
+    top: 25px;
+    width: 49%;
+    left: -42px;
+  }
+  .circle-big {
+    overflow: hidden;
+    border: 16px solid;
+    border-right: 11.34px solid;
+    border-bottom: 13px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .circle-small {
+    border: 4.5px solid;
+    border-right: 4.2px solid;
+    border-bottom: 4.7px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .promo__footer-info {
+    width: 264px;
+    margin-right: 0px;
+    .promo__h2 {
+      padding-top: 18px;
+      font-size: 20px;
+      padding-left: 0;
+    }
+    .promo__footer_text {
+      font-size: 14px;
+      margin-left: 0px;
+      padding-top: 15px;
+      margin-bottom: -8px;
+      line-height: 144%;
+    }
+  }
+  /* Section как помочь */
+.title__help {
+  font-size: 24px;
+}
 }

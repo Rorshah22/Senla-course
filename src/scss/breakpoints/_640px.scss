@@ -74,4 +74,51 @@
       background-size: 101.5% auto;
     }
   }
+  .promo__footer {
+    margin-top:49px;
+    height: 100%;
+    .container{
+      flex-direction: column;
+    }
+  }
+  .image-wrapper {
+    top: 14px;
+    width: 51%;
+    left: 79px;
+}
+  .circle-big {
+    overflow: hidden;
+    border: 11px solid;
+    border-right: 8px solid;
+    border-bottom: 9px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .circle-small {
+    border: 3.25px solid;
+    border-right: 2.97px solid;
+    border-bottom: 3.34px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .promo__footer-info {
+    width: 382px;
+    margin-right: 0px;
+    .promo__h2 {
+      padding-top: 33px;
+      font-size: 16px;
+      padding-left: 0;
+    }
+    .promo__footer_text {
+      font-size: 14px;
+      margin-left: 0px;
+      padding-top: 0px;
+      margin-bottom: 19px;
+      line-height: 144%;
+    }
+  }
+    /* Section как помочь */
+.title__help {
+  font-size: 24px;
+}
 }

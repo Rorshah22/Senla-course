@@ -80,4 +80,50 @@
   
     }
   }
+  
+  .promo__footer {
+    margin-top:28px;
+    height: 100%;
+    padding-bottom: 5%;
+    .container{
+      flex-direction: column;
+    }
+  }
+  .image-wrapper {
+    top: 16px;
+    width: 64%;
+    left: 19px;
+}
+  .circle-big {
+    border: 11px solid;
+    border-right: 8px solid;
+    border-bottom: 9px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .circle-small {
+    border: 3.25px solid;
+    border-right: 2.97px solid;
+    border-bottom: 3.34px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .promo__footer-info {
+    width: 300px;
+    .promo__h2 {
+      padding-top: 36px;
+      font-size: 16px;
+      padding-left: 0;
+    }
+    .promo__footer_text {
+      font-size: 14px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      line-height: 144%;
+    }
+  }
+    /* Section как помочь */
+.title__help {
+  font-size: 24px;
+}
 }

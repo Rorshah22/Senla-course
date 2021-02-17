@@ -100,7 +100,7 @@ h3 {
   margin-top: 273px;
   height: 650px;
   background-color: #ffffff;
-  .container{
+  .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -108,32 +108,31 @@ h3 {
 }
 /* Декоративный элемент слева */
 
-.image-wrapper{
-  top:54px;
+.image-wrapper {
+  top: 54px;
   position: relative;
-  
+
   width: 45%;
   left: -25px;
-
 }
-.image-wrapper::before{
-  content: '';
+.image-wrapper::before {
+  content: "";
   width: 50vw;
   position: absolute;
   right: 50%;
   top: 0;
   bottom: 0;
-  background-color: #FFC41E;
+  background-color: #ffc41e;
 }
-.image-wrapper-main{
+.image-wrapper-main {
   position: relative;
 }
-.image-wrapper-main::after{
- background-image: url(../images/design/dogInPriason.png);
- background-size: 100% 100%;
+.image-wrapper-main::after {
+  background-image: url(../images/design/dogInPriason.png);
+  background-size: 100% 100%;
 }
 
-.image-wrapper-secondary{
+.image-wrapper-secondary {
   position: absolute;
   top: auto;
   left: auto;
@@ -142,28 +141,28 @@ h3 {
   width: 45%;
 }
 .image-wrapper-secondary::after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 100%;
   background-image: url(../images/design/catInPriason.png);
   background-size: 100% 100%;
 }
 
-.circle-big{
+.circle-big {
   overflow: hidden;
   border: 28px solid;
   border-bottom: 29px solid;
   border-radius: 50%;
   color: #ffc41e;
 }
-.circle-small{
+.circle-small {
   border: 8px solid #ffc41e;
   border-bottom: 9px solid #ffc41e;
   border-radius: 50%;
 }
 
-.circle-big::after{
-  content: '';
+.circle-big::after {
+  content: "";
   display: block;
   padding-bottom: 100%;
   height: 0;
@@ -202,6 +201,47 @@ h3 {
 }
 .king__help {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 49px;
+}
+.help-items {
+   list-style-type: none;
+   text-align: center;
+   p{
+     width: 166px;
+   }
+}
+
+.king__help {
+  .help-items {
+    &:nth-child(1) > a {
+      background: url(../images/design/group1.svg) center/60% 60% no-repeat;
+      }
+    &:nth-child(2) > a {
+      background: url(../images/design/Group2.svg) center/60% 60% no-repeat;
+    }
+    &:nth-child(3) > a {
+      background: url(../images/design/Group3.svg) center/60% 60% no-repeat;
+    }
+    &:nth-child(4) > a {
+      background: url(../images/design/Group4.svg) center/60% 60% no-repeat;
+    }
+    &:nth-child(5) > a {
+      background: url(../images/design/Group5.svg) center/60% 60% no-repeat;
+    }
+    .help-items-img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #ffc41e;
+    }
+    .help-items-img:hover{
+      background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px #cccccc;
+    }
+  }
 }
 .card_box {
   display: flex;
@@ -212,6 +252,33 @@ h3 {
   border-radius: 50%;
   border: 2px solid #ffc41e;
 }
+//   .card_info{
+//   .card_box:nth-child(1){
+//     background-image: url(../images/content/Group1.svg);
+//     background-size: 100% 100%;
+//     // background-color: black;
+//   }
+//   .card_box:nth-child(2){
+//     // background-image: url(../images/content/Group1.svg);
+//     background-size: 100% 100%;
+//     background-color: red;
+//   }
+//   .card_box:nth-child(3){
+//     // background-image: url(../images/content/Group1.svg);
+//     background-size: 100% 100%;
+//     background-color: green;
+//   }
+//   .card_box:nth-child(4){
+//     // background-image: url(../images/content/Group1.svg);
+//     background-size: 100% 100%;
+//     background-color: yellow;
+//   }
+//   .card_box:nth-child(5){
+//     background-image: url(../images/content/Group1.svg);
+//     background-size: 100% 100%;
+//     background-color: brown;
+//   }
+// }
 .card_info {
   display: flex;
   flex-direction: column;
@@ -663,7 +730,7 @@ h3 {
       border-bottom-right-radius: 34vw;
     }
     .img-foot {
-      background-image: url(../images/design/img-foot.svg);
+      background-image: url("../images/design/img-foot.svg");
       position: absolute;
       height: 100%;
       background-repeat: no-repeat;

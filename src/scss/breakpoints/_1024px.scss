@@ -50,13 +50,15 @@
   /* Надпись "Я буду лучшим другом" */
   .container {
     .promo__background-img {
-      top: 166px;
-      left: 0px;
-      background-size: 55.5% auto;
+      top: 167px;
+      left: -101px;
+      background-size: 69.5% auto;
     }
   }
   .promo__footer{
     margin-top: 106px;
+    height: 100%;
+    padding-bottom: 4.5%;
   }
 /* Декоративный элемент слева */
 .image-wrapper{
@@ -91,6 +93,19 @@
     margin-bottom: -8px;
     }
 }
-
+/* Section как помочь */
+.title__help {
+  font-size: 24px;
+  margin-top: 63px;
+}
+.card_box {
+  width: 100px;
+  height: 100px;
+}
+.card_info{
+  margin-top: 9px;
+  margin-right: -22px;
+  margin-left: 20px;
+}
 
 }

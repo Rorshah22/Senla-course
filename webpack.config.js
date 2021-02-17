@@ -31,6 +31,7 @@ module.exports = {
   },
   module: {
     rules: [
+   
       {
         test: /\.((c|sa|sc)ss)$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
@@ -41,7 +42,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
+        test: /\.(png|gif|jpe?g)$/i,
         use: [
           {
             loader: 'url-loader',
