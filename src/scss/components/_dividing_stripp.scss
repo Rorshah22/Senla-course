@@ -5,9 +5,11 @@
   overflow: hidden;
 }
 
-.dividing-stripp img {
-  position: relative;
-  width: 150px;
+.dividing-stripp {
+  img {
+    position: relative;
+    width: 150px;
+  }
 }
 .dividing-stripp::before {
   content: "";
@@ -50,12 +52,12 @@
     width: 118px;
   }
 }
-.volunteering {
-  .dividing-stripp {
-    margin-top: 73px;
-    img {
-      width: 85px;
-    }
+
+.dividing-stripp {
+  margin-top: 73px;
+  img {
+    width: 85px;
   }
+
   //
 }

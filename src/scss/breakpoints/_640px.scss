@@ -3,31 +3,18 @@
   .container {
     max-width: 382px / 640px * 100%;
   }
-  // .menu-box {
-  //   display: none;
-  // }
+
   h3 {
     font-size: 18px;
   }
-  // @import "../components/burger";
+
   .menu-btn {
     top: 32px;
     left: 10.5%;
     width: 24px;
     height: 16px;
   }
-  // .header {
-  //   .social-list {
-  //     margin-top: 0px;
-  //     margin-left: (495px / 640px) * 100%;
-  //     .icon {
-  //       width: 30px;
-  //       height: 30px;
-  //       font-size: 19px;
-  //       margin-right: 19px;
-  //     }
-  //   }
-  // }
+
   .header-background {
     right: -34%;
     background-image: url(../images/design/dog_header_640.png);
@@ -157,16 +144,20 @@
   .home {
     margin-top: 31px;
   }
-  .dividing-stripp::after img {
-    position: relative;
-    width: 54px;
+  .dividing-stripp {
+    // width: 3.5em;
+    img {
+      position: relative;
+      width: 54px;
+    }
+    &::after {
+      left: 56%;
+    }
   }
   .dividing-stripp::before {
     right: 56%;
   }
-  .dividing-stripp::after {
-    left: 56%;
-  }
+
   .home-for {
     flex-wrap: wrap;
     padding-left: 0;
@@ -197,12 +188,76 @@
       padding: 17px;
     }
   }
-  .photo-card-footer {
-    padding-left: 0;
-  }
   .photo-card {
     h3 {
       margin-top: 0;
+    }
+  }
+  .requisites {
+    padding-bottom: 16px;
+  }
+  .requisites-article {
+    justify-content: space-between;
+  }
+  .volunteering {
+    padding-bottom: 32px;
+    .container {
+      flex-direction: column;
+    }
+  }
+  .news {
+    padding-bottom: 16px;
+    h3 {
+      padding-top: 16px;
+    }
+    .container {
+      padding: 0 129px;
+    }
+  }
+  // .news-blog {
+  //   justify-content: space-between;
+  // }
+  .news-blog-text {
+    padding-left: 18px;
+    // width: 205px;
+  }
+  .about {
+    // padding: 0 129px;
+
+    .container {
+      padding: 0 129px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .social-list {
+    margin-left: 0;
+    .icon {
+      width: 24px;
+      height: 24px;
+      font-size: 1em;
+      margin-left: 28px;
+      margin-right: 0;
+    }
+  }
+  .about-web {
+    margin-top: 24px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .thank {
+    height: 360px;
+  }
+  .box-left {
+    .thanks {
+      margin-top: 34.788618%;
+      font-size: 30px;
+      line-height: 100%;
+    }
+    .img-foot {
+      background-size: 44px;
     }
   }
 }

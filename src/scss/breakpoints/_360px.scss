@@ -152,18 +152,24 @@
   }
 
   // =====================================
-  .home {
-    margin-top: 38px;
+
+  .dividing-stripp {
+    img {
+      width: 54px;
+    }
+    &::before {
+      right: 70%;
+    }
+    &::after {
+      left: 70%;
+    }
   }
-  .dividing-stripp img {
-    width: 54px;
-  }
-  .dividing-stripp::before {
-    right: 70%;
-  }
-  .dividing-stripp::after {
-    left: 70%;
-  }
+  // .dividing-stripp::before {
+  //   right: 70%;
+  // }
+  // .dividing-stripp::after {
+  //   left: 70%;
+  // }
   .home-for {
     // width: 875px;
     flex-direction: column;
@@ -215,9 +221,9 @@
     }
   }
 
-  .photo-card-footer {
-    padding-left: 0;
-  }
+  // .photo-card-footer {
+  //   padding-left: 0;
+  // }
   .photo-card {
     h3 {
       margin-top: 0;
@@ -233,6 +239,79 @@
   .footer {
     ul {
       flex-direction: column;
+    }
+  }
+  .requisites {
+    padding-bottom: 16px;
+  }
+  .requisites-article {
+    justify-content: space-between;
+  }
+  .volunteering {
+    padding-bottom: 32px;
+    .container {
+      flex-direction: column;
+    }
+  }
+  .news {
+    padding-bottom: 16px;
+    h3 {
+      padding-top: 16px;
+    }
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .news-blog {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .news-blog-text {
+    font-size: 14px;
+    padding-left: 18px;
+    // width: 205px;
+  }
+  .social-list {
+    margin-left: 0;
+    .icon {
+      width: 32px;
+      height: 32px;
+      font-size: 1em;
+      margin-left: 18px;
+      margin-right: 0;
+    }
+    ._icon-instagram {
+    }
+  }
+  .about {
+    padding: 0 30px;
+    .container {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .about-web {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .thank {
+    height: 267px;
+  }
+  .box-left {
+    width: 68.021962%;
+    .thanks {
+      margin-left: 10.788618%;
+      margin-top: 75px;
+      font-size: 30px;
+      line-height: 100%;
+    }
+    .img-foot {
+      background-size: 44px;
     }
   }
 }

@@ -120,10 +120,10 @@
   .home {
     margin-top: 58px;
   }
-  .dividing__stripp img {
+  .dividing-stripp img {
     width: 100px;
   }
-  .home__for {
+  .home-for {
     // padding-left: 115px;
     h3 {
       height: 17%;
@@ -157,7 +157,7 @@
   }
 
   .volunteering {
-    height: 80%;
+    padding-bottom: 41px;
 
     .promo-box {
       &::before {
@@ -173,6 +173,24 @@
     }
     article {
       padding-top: 0;
+    }
+  }
+  .requisites-article {
+    justify-content: space-between;
+  }
+  .news {
+    padding-bottom: 36px;
+  }
+  .thank {
+    height: 555px;
+  }
+  .box-left {
+    .thanks {
+      margin-top: 21.7886178862%;
+      font-size: 48px;
+    }
+    .img-foot {
+      background-size: 64px;
     }
   }
 }

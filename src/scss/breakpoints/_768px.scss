@@ -144,9 +144,11 @@
   .home {
     margin-top: 51px;
   }
-  .dividing-stripp img {
-    position: relative;
-    width: 64px;
+  .dividing-stripp {
+    img {
+      position: relative;
+      width: 64px;
+    }
   }
   .dividing-stripp::before {
     right: 56%;
@@ -161,7 +163,6 @@
     justify-content: center;
   }
   .home-for-info {
-    // max-width: 189px;
     padding-right: 47px;
     h3 {
       height: 10%;
@@ -186,7 +187,53 @@
       margin-top: 0;
     }
   }
-  .photo-card-footer {
-    padding-left: 0;
+  .requisites {
+    padding-bottom: 16px;
+  }
+  .requisites-article {
+    justify-content: space-between;
+  }
+  .requisites-article-item {
+    max-width: 237px;
+  }
+
+  .volunteering {
+    padding-bottom: 41px;
+    .container {
+      align-items: center;
+      article {
+        padding-top: 0;
+        padding-left: 10px;
+        max-width: 264px;
+      }
+    }
+  }
+  .news {
+    padding-bottom: 24px;
+    .container {
+      max-width: 80%;
+    }
+  }
+  // .news-block {
+  // }
+  .news-blog-text {
+    // width: 50%;
+    padding-left: 18px;
+  }
+  .social-list {
+    margin-left: 0;
+  }
+  .thank {
+    height: 416px;
+  }
+  .box-left {
+    .thanks {
+      margin-top: 34.788618%;
+      font-size: 36px;
+      line-height: 100%;
+    }
+    .img-foot {
+      background-size: 54px;
+    }
   }
 }
