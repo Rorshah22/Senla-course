@@ -1,67 +1,67 @@
-@media screen and (min-width: 360px) and (max-width: 639px) {
+@media screen and (max-width: 639px) {
+  @import "../components/burger2";
   .container {
     max-width: 300px / 360px * 100%;
   }
 
-  .menu__box {
-    display: none;
-  }
+  // .menu-box {
+  //   display: none;
+  // }
   h3 {
     font-size: 18px;
   }
 
-  @import "../components/burger";
-  .menu__btn {
+  // @import "../components/burger";
+  .menu-btn {
     top: 32px;
     left: 3%;
     width: 24px;
     height: 16px;
   }
-  .header {
-    .social_list {
-      margin-top: 0px;
-      margin-left: (256px / 360px) * 100%;
-      .icon {
-        width: 32px;
-        height: 32px;
-        font-size: 19px;
-        margin-right: 19px;
-      }
-    }
-    .img__background-header {
-      right: -10%;
-    }
+  // .header {
+  //   .social-list {
+  //     margin-top: 0px;
+  //     margin-left: (256px / 360px) * 100%;
+  //     .icon {
+  //       width: 32px;
+  //       height: 32px;
+  //       font-size: 19px;
+  //       margin-right: 19px;
+  //     }
+  //   }
+  // }
+  .header-background {
+    background-image: url(../images/design/dog_header_360.png);
   }
-
   .promo {
     margin-top: -12px;
   }
-  .promo__h1 {
+  .promo-h1 {
     font-size: 12px;
     margin-top: -31px;
     width: 211px;
     line-height: 14px;
   }
 
-  .promo__text {
+  .promo-text {
     margin-top: 21px;
     width: 158px;
     font-size: 14px;
     line-height: 144%;
   }
 
-  .promo__title {
+  .promo-title {
     font-size: 30px;
     line-height: 36px;
   }
-  .promo__text-info {
+  .promo-text-info {
     margin-top: 92px;
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     width: 100%;
   }
-  .promo_btn {
+  .promo-btn {
     margin-top: 4px;
     margin-left: 18%;
     font-size: 18px;
@@ -69,13 +69,13 @@
     height: 30px;
     width: 194px;
   }
-  .promo__picture {
+  .promo-picture {
     top: -83px;
     left: 38.5%;
   }
   /* Надпись "Я буду лучшим другом" */
   .container {
-    .promo__background-img {
+    .promo-background-img {
       top: 194px;
       left: -30px;
       background-size: 75.5% auto;
@@ -109,14 +109,14 @@
     border-radius: 50%;
     color: #ffc41e;
   }
-  .promo__footer-info {
+  .promo-footer-info {
     width: 300px;
-    .promo__h2 {
+    .promo-h2 {
       padding-top: 36px;
       font-size: 16px;
       padding-left: 0;
     }
-    .promo__footer_text {
+    .promo-footer-text {
       font-size: 14px;
       margin-left: 0px;
       margin-bottom: 0px;
@@ -125,11 +125,11 @@
   }
   /* Section как помочь */
 
-  .title__help {
+  .title-help {
     font-size: 18px;
     margin-top: 32px;
   }
-  .king__help {
+  .king-help {
     margin-top: 22px;
     padding-right: 0px;
     padding-left: 0px;
@@ -155,21 +155,21 @@
   .home {
     margin-top: 38px;
   }
-  .dividing__stripp img {
+  .dividing-stripp img {
     width: 54px;
   }
-  .dividing__stripp::before {
+  .dividing-stripp::before {
     right: 70%;
   }
-  .dividing__stripp::after {
+  .dividing-stripp::after {
     left: 70%;
   }
-  .home__for {
+  .home-for {
     flex-wrap: wrap;
     padding-left: 0;
     margin-top: 16px;
   }
-  .home__for-info {
+  .home-for-info {
     width: 100%;
     padding-right: 0px;
 
@@ -187,10 +187,10 @@
   }
   .photo__card h3 {
     margin-top: 8px;
-   
+
     font-size: 20px;
-}
-  .card_animal {
+  }
+  .card-animal {
     margin-top: 15px;
     margin-bottom: 8px;
     figure {
@@ -198,19 +198,33 @@
       margin-bottom: -21px;
       padding: 17px;
     }
-    span{
+    span {
       margin-top: -26px;
     }
-    p{
-      
+    p {
     }
-    .btn{
+    .btn {
       height: 30px;
       font-size: 18px;
     }
-    .btn_secondary {
+    .btn-secondary {
       font-size: 18px;
       height: 30px;
+    }
+  }
+
+  .photo-card-footer {
+    padding-left: 0;
+  }
+  .other-help,
+  .auto-help {
+    .container {
+      padding-left: 0;
+    }
+  }
+  .footer {
+    ul {
+      flex-direction: column;
     }
   }
 }

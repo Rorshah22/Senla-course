@@ -1,41 +1,41 @@
+@import "../base/vars";
 /* Кнопки ===============================================================*/
 .btn {
-    text-decoration: none;
-    height: 42px;
-    font-size: 20px;
-    padding-left: 32px;
-    padding-right: 32px;
-    //
-    font-weight: 500;
-    background: #fbc832;
-    border-radius: 58px;
-    border: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background-color: #ffdf86;
+  text-decoration: none;
+  height: 42px;
+  font-size: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 500;
+  background: $btn-color;
+  border-radius: 58px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: $btn-hover-color;
     outline: none;
   }
-  .btn:active {
-    background-color: #ffbb0c;
+  &:active {
+    background-color: $btn-active-color;
     outline: none;
   }
-  .promo_btn {
-    margin-top: 21px;
-    width: 182px;
-    color: #000000;
-  }
-  .btn_secondary {
-    height: 42px;
-    font-weight: 500;
-    font-size: 20px;
-    border: 2px solid #ffc41e;
-    border-radius: 58px;
-    background-color: #f6f6f6;
-    padding-right: 33px;
-    padding-left: 32px;
-    text-align: center;
-    cursor: pointer;
-    // outline: none;
-  }
+}
+
+.promo-btn {
+  margin-top: 21px;
+  width: 182px;
+  color: $black;
+}
+.btn-secondary {
+  height: 42px;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid $btn-sec-border-color;
+  border-radius: 58px;
+  background-color: $btn-sec-background-color;
+  padding-right: 33px;
+  padding-left: 32px;
+  text-align: center;
+  cursor: pointer;
+}

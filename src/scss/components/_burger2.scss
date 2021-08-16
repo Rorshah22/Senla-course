@@ -1,0 +1,77 @@
+.menu-burger {
+  position: relative; /* задаем относительное позиционирование */
+  width: 40px; /* определяем размеры блока */
+  height: 35px;
+  display: block;
+  margin-left: 10px;
+  z-index: 100;
+  top: 22px;
+}
+.menu-burger span,
+.menu-burger:after,
+.menu-burger:before {
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  background: #515758;
+  margin: 0 auto;
+}
+.menu-burger span {
+  top: 21px;
+}
+.menu-burger:after,
+.menu-burger:before {
+  content: "";
+}
+.menu-burger:after {
+  bottom: 5px;
+}
+.menu-burger:before {
+  top: 14px;
+}
+
+.menu-box__item {
+  display: none;
+}
+
+.social-list {
+  display: flex;
+  margin-left: auto;
+}
+.menu-burger.open-menu span {
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu-burger.open-menu:before {
+  transform: rotate(38deg);
+  top: 16px;
+  transition: 0.4s;
+}
+.menu-burger.open-menu:after {
+  transform: rotate(-38deg);
+  bottom: 16px;
+  transition: 0.4s;
+}
+.open {
+  display: block;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.menu-list {
+  display: block;
+  position: fixed;
+  height: 383px;
+  top: 0;
+  left: 0;
+  // background: rgb(10, 10, 10);
+  // box-shadow: #ccc;
+  width: 100%;
+  // height: 783px;
+  z-index: 99;
+  box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+}
+.menu-box {
+  margin-top: -7px;
+}

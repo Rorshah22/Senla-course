@@ -1,62 +1,63 @@
 @media screen and (min-width: 640px) and (max-width: 767px) {
+  @import "../components/burger2";
   .container {
     max-width: 382px / 640px * 100%;
   }
-  .menu__box {
-    display: none;
-  }
-  h3{
+  // .menu-box {
+  //   display: none;
+  // }
+  h3 {
     font-size: 18px;
   }
-  @import "../components/burger";
-  .menu__btn {
+  // @import "../components/burger";
+  .menu-btn {
     top: 32px;
     left: 10.5%;
     width: 24px;
     height: 16px;
   }
-  .header {
-    .social_list {
-      margin-top: 0px;
-      margin-left: (495px / 640px) * 100%;
-      .icon {
-        width: 30px;
-        height: 30px;
-        font-size: 19px;
-        margin-right: 19px;
-      }
-    }
-    .img__background-header{
-      right: -34%;
-    }
+  // .header {
+  //   .social-list {
+  //     margin-top: 0px;
+  //     margin-left: (495px / 640px) * 100%;
+  //     .icon {
+  //       width: 30px;
+  //       height: 30px;
+  //       font-size: 19px;
+  //       margin-right: 19px;
+  //     }
+  //   }
+  // }
+  .header-background {
+    background-image: url(../images/design/dog_header_640.png);
   }
 
   .promo {
     margin-top: -6px;
   }
-  .promo__title {
+  .promo-title {
     font-size: 30px;
     margin-top: 33px;
     margin-bottom: 48px;
   }
-  .promo__h1 {
+  .promo-h1 {
     font-size: 12px;
     width: 282px;
     line-height: 14px;
   }
-  .promo__text {
+  .promo-text {
     padding-top: 14px;
     font-size: 14px;
     width: 282px;
   }
-  .promo__text-info {
+  .promo-text-info {
     margin-top: 155px;
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     width: 100%;
   }
-  .promo_btn {
+  .promo-btn {
     margin-top: 3px;
     margin-left: 93px;
     font-size: 18px;
@@ -64,22 +65,22 @@
     height: 30px;
     width: 194px;
   }
-  .promo__picture {
+  .promo-picture {
     top: -22px;
     left: 65.5%;
   }
 
   /* Надпись "Я буду лучшим другом" */
   .container {
-    .promo__background-img {
+    .promo-background-img {
       top: 98px;
       background-size: 101.5% auto;
     }
   }
   .promo__footer {
-    margin-top:49px;
+    margin-top: 49px;
     height: 100%;
-    .container{
+    .container {
       flex-direction: column;
     }
   }
@@ -87,7 +88,7 @@
     top: 14px;
     width: 51%;
     left: 79px;
-}
+  }
   .circle-big {
     overflow: hidden;
     border: 11px solid;
@@ -103,15 +104,15 @@
     border-radius: 50%;
     color: #ffc41e;
   }
-  .promo__footer-info {
+  .promo-footer-info {
     width: 100%;
     margin-right: 0px;
-    .promo__h2 {
+    .promo-h2 {
       padding-top: 33px;
       font-size: 16px;
       padding-left: 0;
     }
-    .promo__footer_text {
+    .promo-footer-text {
       font-size: 14px;
       margin-left: 0px;
       padding-top: 0px;
@@ -121,15 +122,15 @@
   }
   /* Section как помочь */
   .help {
-    .container{
+    .container {
       max-width: 78%;
     }
   }
-  .title__help {
+  .title-help {
     font-size: 18px;
     margin-top: 32px;
   }
-  .king__help {
+  .king-help {
     margin-top: 28px;
     padding-right: 0px;
     padding-left: 0px;
@@ -144,58 +145,59 @@
         margin-top: 9px;
         margin-left: -20px;
       }
-  .help-items-img {
-   
-    width: 80px;
-    height: 80px;
-  }
+      .help-items-img {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
   // ==================================
-  
-.home {
-  margin-top: 31px;
-}
-.dividing__stripp img {
-  position: relative;
-  width: 54px;
-}
-.dividing__stripp::before{
-  right: 56%;
-  
-}
-.dividing__stripp::after {
-left: 56%;
-}
-.home__for {
-flex-wrap: wrap;
-padding-left: 0;
-margin-top: 16px;
-}
-.home__for-info {
-  width: 100%;
-  padding-right: 0px;
 
-  h3{
-    height: 10%;
-    text-align: center;
-    font-size: 16px;
+  .home {
+    margin-top: 31px;
   }
-  p{
-    font-size: 14px;
-    margin-top: 28px;
-    line-height: 141%;
-    margin-bottom: 23px;
+  .dividing-stripp::after img {
+    position: relative;
+    width: 54px;
   }
-}
+  .dividing-stripp::before {
+    right: 56%;
+  }
+  .dividing-stripp::after {
+    left: 56%;
+  }
+  .home-for {
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 16px;
+  }
+  .home-for-info {
+    width: 100%;
+    padding-right: 0px;
 
-.card_animal {
-  figure {
-   margin: 0 auto;
-  
-   margin-bottom: -21px;
-   padding: 17px;
-}
-}
+    h3 {
+      height: 10%;
+      text-align: center;
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 28px;
+      line-height: 141%;
+      margin-bottom: 23px;
+    }
+  }
+
+  .card-animal {
+    figure {
+      margin: 0 auto;
+
+      margin-bottom: -21px;
+      padding: 17px;
+    }
+  }
+  .photo-card-footer {
+    padding-left: 0;
+  }
 }

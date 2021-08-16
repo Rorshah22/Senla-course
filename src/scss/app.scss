@@ -22,42 +22,52 @@ a {
 }
 h3 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 24px;
   color: #242424;
 }
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Контейнер */
 .container {
+  position: relative;
   margin: 0 auto;
   max-width: 1146px;
 }
 
 /* Main==================================================================== */
+.main {
+  margin-top: 102px;
+}
+
 /* Section promo=========================================================== */
 .promo {
   position: relative;
-  margin-top: 102px;
 }
-.promo__title {
+.promo-title {
   font-weight: 700;
   font-size: 72px;
   color: #242424;
 }
-.promo__h1 {
+.promo-h1 {
   margin-top: -41px;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
   color: #6b6b6b;
 }
-.promo__text {
+.promo-text {
   margin-top: 0px;
   width: 659px;
   font-weight: 600;
   line-height: 140%;
   color: #474747;
 }
-.promo__text-info {
+.promo-text-info {
   margin-top: 44px;
   width: 428px;
   font-weight: 600;
@@ -68,14 +78,13 @@ h3 {
 
 /* Надпись "Я буду лучшим другом" */
 .container {
-  position: relative;
-  .promo__background-img {
+  .promo-background-img {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url(../images/design/bestFriend.png);
-    background-repeat: no-repeat;
+    background: url(../images/design/bestFriend.png) no-repeat;
+
     top: 184px;
     left: -110px;
   }
@@ -83,11 +92,11 @@ h3 {
 
 /* Кот на фоне */
 
-.box__img {
+.box-img {
   position: relative;
 }
 
-.promo__picture {
+.promo-picture {
   position: absolute;
   top: 140px;
   left: 498px;
@@ -170,11 +179,12 @@ h3 {
 
 // =============================================================
 .promo_h2,
-.promo__footer-info {
-  width: 476px;
+.promo-footer-info {
+  max-width: 476px;
   margin-right: 97px;
+  flex-grow: 1;
 }
-.promo__h2 {
+.promo-h2 {
   padding-top: 101px;
   padding-left: 11px;
   font-weight: 600;
@@ -184,7 +194,7 @@ h3 {
   text-align: center;
   color: #c78100;
 }
-.promo__footer_text {
+.promo-footer-text {
   margin-left: 9px;
   padding-top: 3px;
   font-weight: 400;
@@ -192,14 +202,14 @@ h3 {
   color: #242424;
 }
 /* Section как помочь */
-.title__help {
+.title-help {
   margin-top: 77px;
   text-align: center;
   font-weight: 300;
   font-size: 28px;
   color: #242424;
 }
-.king__help {
+.king-help {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -215,7 +225,7 @@ h3 {
   }
 }
 
-.king__help {
+.king-help {
   .help-items {
     &:nth-child(1) > a {
       background: url(../images/design/group1.svg) center/60% 60% no-repeat;
@@ -247,18 +257,18 @@ h3 {
   }
 }
 /*=================================================== */
-.home__for {
+.home-for {
   display: flex;
   margin-top: 67px;
   padding-left: 175px;
 }
 
-.home__for-info {
+.home-for-info {
   padding-right: 97px;
   width: 389px;
   flex-grow: 0;
 }
-.home__for h3 {
+.home-for h3 {
   margin: 0;
 }
 .home__for p {
@@ -267,23 +277,23 @@ h3 {
   font-size: 16px;
 }
 /* Section photo__card============================================== */
-.photo__card {
+.photo-card {
   h3 {
-  text-align: center;
-  margin-top: 56px;
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 28px;
-}
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 28px;
+  }
 }
 /* Делаем карточки на гридах */
-.photo__card-box {
+.photo-card-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 16px;
   align-items: center;
 }
-.card_animal {
+.card-animal {
   display: grid;
   border: 1px solid #d6d6d6;
   border-radius: 5px;
@@ -297,14 +307,14 @@ h3 {
     width: 100%;
   }
 }
-.card_animal {
+.card-animal {
   figure {
     margin: 0 auto;
     margin-top: 12px;
     margin-bottom: -24px;
   }
 }
-.card_animal figcaption {
+.card-animal figcaption {
   padding-top: 2px;
   padding-bottom: 10px;
   font-weight: 500;
@@ -313,11 +323,11 @@ h3 {
   color: #242424;
   border-bottom: 1px solid #d6d6d6;
 }
-.card_animal button {
+.card-animal button {
   margin: 0 auto;
 }
 
-.card_animal span {
+.card-animal span {
   margin-top: 5px;
   padding-left: 16px;
   padding-right: 16px;
@@ -326,7 +336,7 @@ h3 {
   color: #6b6b6b;
   line-height: 20px;
 }
-.card_animal p {
+.card-animal p {
   margin: 0px;
   margin-top: -19px;
   padding-left: 16px;
@@ -336,16 +346,16 @@ h3 {
   font-weight: 500;
   line-height: 20px;
 }
-.card_animal .btn {
+.card-animal .btn {
   position: relative;
   top: 11px;
   /* padding-top:10px; */
 }
-.card_animal .btn_secondary {
+.card-animal .btn-secondary {
   position: relative;
   top: 3px;
 }
-.new_page {
+.new-page {
   display: flex;
   justify-content: center;
   margin-top: 9px;
@@ -353,7 +363,7 @@ h3 {
 
   color: #ad7f00;
 }
-.new_page-link {
+.new-page-link {
   display: inline-block;
   height: 30px;
   border-bottom: 2px solid;
@@ -377,23 +387,23 @@ h3 {
   padding: 2px;
   transform: rotate(45deg);
 }
-.photo_card_footer {
+.photo-card-footer {
   display: flex;
   padding-top: 55px;
   padding-left: 195px;
 }
-.photo_card_footer p {
+.photo-card-footer p {
   max-width: 583px;
   font-size: 18px;
   line-height: 24px;
   color: #242424;
 }
-.icon-photo_card {
+.icon-photo-card {
   display: flex;
   align-items: center;
 }
-.icon-photo_card {
-  .social_list {
+.icon-photo-card {
+  .social-list {
     margin-top: -7px;
     margin-left: 38px;
   }
@@ -410,22 +420,22 @@ h3 {
   text-align: center;
   margin: 0 auto;
   padding-top: 5px;
-  width: 758px;
+  max-width: 758px;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #6b6b6b;
 }
 
-.requisites_article {
+.requisites-article {
   display: flex;
   justify-content: space-evenly;
   margin-left: -18px;
 }
-.requisites_article article {
+.requisites-article article {
   width: 389px;
 }
-.requisites_article h4 {
+.requisites-article h4 {
   margin-top: 42px;
   font-weight: 300;
   font-size: 28px;
@@ -433,7 +443,7 @@ h3 {
   margin-bottom: 0;
 }
 
-.requisites_article ul {
+.requisites-article ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
@@ -441,18 +451,18 @@ h3 {
   margin-top: 25px;
   padding: 0;
 }
-.requisites_article li {
+.requisites-article li {
   margin-top: 6px;
 }
-.requisites_article .btn {
+.requisites-article .btn {
   margin-top: 10px;
 }
-.requisites_article ol {
+.requisites-article ol {
   padding-left: 16px;
 }
 
 // Секция карма
-.other_help {
+.other-help {
   h4 {
     margin-top: 40px;
     margin-bottom: 26px;
@@ -494,14 +504,14 @@ h3 {
       font-weight: 300;
     }
   }
-  .new_page {
+  .new-page {
     justify-content: start;
     margin-left: 0px;
     margin-top: 20px;
   }
 }
 // Раздел автопомощь
-.auto_help {
+.auto-help {
   .container {
     width: 680px;
     align-content: center;
@@ -516,26 +526,40 @@ h3 {
 // Раздел волонтерство
 .volunteering {
   height: 656px;
-  .promo__box {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+  }
+  .promo-box {
     top: -7px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 50vw;
+      height: 521px;
+      position: absolute;
+      right: 76%;
+      top: 0px;
+      bottom: 0;
+      background-color: #ffc41e;
+    }
   }
-  .promo__box::before {
-    right: 51%;
+  .promo-box-circle {
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      height: 0;
+      background: url(../images/design/Ellipse_3.png) no-repeat;
+      // margin-left: -13px;
+      background-size: 100% 100%;
+      // border-radius: 50%;
+    }
   }
-  .promo__box::after {
-    position: absolute;
-    margin-left: -13px;
-    width: 464px;
-    height: 464px;
-    border-top: 31px solid #ffc41e;
-    border-right: 22px solid #ffc41e;
-    border-left: 34px solid #ffc41e;
-    border-bottom: 26px solid #ffc41e;
-    border-radius: 50%;
-    background-image: url(../images/design/Ellipse_3.png);
-  }
+
   article {
-    margin-left: 50%;
     padding-top: 73px;
     padding-left: 10px;
     max-width: 466px;
@@ -562,12 +586,12 @@ h3 {
     padding-top: 54px;
     text-align: center;
   }
-  .new_page-link {
+  .new-page-link {
     margin-top: 3px;
     margin-left: 10px;
   }
 }
-.news_blog {
+.news-blog {
   display: flex;
   img {
     width: 140px;
@@ -576,7 +600,7 @@ h3 {
     padding-left: 9px;
     padding-bottom: 20px;
   }
-  .news_blog-text {
+  .news-blog-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -642,9 +666,8 @@ h3 {
   }
 }
 //иконки соцсетей
-.social_list {
+.social-list {
   display: flex;
-  margin-top: 21px;
 
   a {
     display: flex;
@@ -707,10 +730,7 @@ h3 {
   }
 }
 // Breakpoints
-@import "breakpoints/360px";
-@import "breakpoints/640px";
-@import "breakpoints/768px";
 @import "breakpoints/1024px";
-@import "breakpoints/1366px";
-@import "breakpoints/1440px";
-@import "breakpoints/1920px";
+@import "breakpoints/768px";
+@import "breakpoints/640px";
+@import "breakpoints/360px";

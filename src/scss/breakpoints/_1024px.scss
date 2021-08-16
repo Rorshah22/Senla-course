@@ -3,169 +3,175 @@
     max-width: 804px / 1024px * 100%;
     margin: 0 auto;
   }
-  h3{
+  h3 {
     font-size: 24px;
   }
-  .menu__item-3 {
-    margin-left: 52px;
-  }
 
-  .icon__social-vk {
-    margin-left: 117px;
-  }
-  .icon__social-insta {
-    margin-left: 28px;
-  }
-
-  .header {
-    .social_list {
-      margin-left: 117px;
-    }
+  .header-background {
+    background-image: url(../images/design/dog_header_1024.png);
   }
   .promo {
     margin-top: -6px;
   }
-  .promo__title {
+  .promo-title {
     font-size: 64px;
     margin-bottom: 69px;
   }
-  .promo__h1 {
+  .promo-h1 {
     font-size: 14px;
   }
-  .promo__text {
+  .promo-text {
     margin-top: 14px;
     width: 461px;
     font-size: 14px;
   }
-  .promo__text-info {
+  .promo-text-info {
     font-size: 20px;
     line-height: 24px;
     width: 300px;
   }
-  .promo_btn {
+  .promo-btn {
     margin-top: 24px;
   }
-  .promo__picture {
+  .promo-picture {
     top: 74px;
     left: 453px / 1024px * 100%;
   }
 
   /* Надпись "Я буду лучшим другом" */
   .container {
-    .promo__background-img {
+    .promo-background-img {
       top: 167px;
       left: -101px;
       background-size: 69.5% auto;
     }
   }
-  .promo__footer{
+  .promo__footer {
     margin-top: 106px;
     height: 100%;
     padding-bottom: 4.5%;
   }
-/* Декоративный элемент слева */
-.image-wrapper{
-  top: 38px;
-  position: relative;
-  width: 45%;
-  left: -20px;
-}
-.circle-big{
-  overflow: hidden;
-  border: 21px solid;
-  border-bottom: 18px solid;
-  border-radius: 50%;
-  color: #ffc41e;
-}
-.circle-small{
-  border: 5px solid #ffc41e;
-  border-bottom: 6px solid #ffc41e;
-  border-radius: 50%;
-}
-.promo__footer-info{
-  width: 329px;
-  margin-right: 72px;
-    .promo__h2{
-  padding-top: 54px;
-  font-size: 24px;
+  /* Декоративный элемент слева */
+  .image-wrapper {
+    flex-shrink: 0;
+    top: 38px;
+    position: relative;
+    width: 45%;
+    left: -20px;
+  }
+  .circle-big {
+    overflow: hidden;
+    border: 21px solid;
+    border-bottom: 18px solid;
+    border-radius: 50%;
+    color: #ffc41e;
+  }
+  .circle-small {
+    border: 5px solid #ffc41e;
+    border-bottom: 6px solid #ffc41e;
+    border-radius: 50%;
+  }
+  .promo-footer-info {
+    // width: 329px;
+    margin-right: 72px;
+    .promo-h2 {
+      padding-top: 54px;
+      font-size: 24px;
     }
-    .promo__footer_text {
+    .promo-footer-text {
       font-size: 16px;
-      
+
       padding-top: 8px;
-    margin-bottom: -8px;
+      margin-bottom: -8px;
     }
-}
-/* Section как помочь */
-.title__help {
-  font-size: 24px;
-  margin-top: 63px;
-}
-.card_box {
-  width: 100px;
-  height: 100px;
-}
-.card_info{
-  margin-top: 9px;
-  margin-right: -22px;
-  margin-left: 20px;
-  
-}
-
-.king__help {
-  margin-top: 28px;
-  padding-right: 17px;
-  padding-left: 10px;
-  .help-items {
-    margin-right: -21px;
-    p {
-      width: 140px;
-      font-size: 14px;
-    }
-.help-items-img {
- 
-  width: 110px;
-  height: 110px;
-}
   }
-}
-.home {
-  margin-top: 58px;
-}
-.dividing__stripp img {
-  
-  width: 100px;
-}
-.home__for {
-  padding-left: 115px;
-  h3{
-    height: 17%;
-  }
-  p{
-    margin-top: 13px;
-    width: 275px;
-  }
-}
-.home__for-info {
-  padding-right: 74px;
-}
-
-//Grid card-box======================
-.photo__card-box {
-grid-gap: 69px;
-}
-.photo__card{
-  h3{
-    margin-top: 52px;
+  /* Section как помочь */
+  .title-help {
     font-size: 24px;
+    margin-top: 63px;
   }
-}
-.card_animal {
-   figure {
-    margin: 0 auto;
-    
-    margin-bottom: -21px;
-    padding: 17px;
-}
-}
+  .card_box {
+    width: 100px;
+    height: 100px;
+  }
+  .card_info {
+    margin-top: 9px;
+    margin-right: -22px;
+    margin-left: 20px;
+  }
+
+  .king-help {
+    margin-top: 28px;
+    padding-right: 17px;
+    padding-left: 10px;
+    .help-items {
+      margin-right: -21px;
+      p {
+        width: 140px;
+        font-size: 14px;
+      }
+      .help-items-img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+  .home {
+    margin-top: 58px;
+  }
+  .dividing__stripp img {
+    width: 100px;
+  }
+  .home__for {
+    padding-left: 115px;
+    h3 {
+      height: 17%;
+    }
+    p {
+      margin-top: 13px;
+      width: 275px;
+    }
+  }
+  .home-for-info {
+    padding-right: 74px;
+  }
+
+  //Grid card-box======================
+  .photo-card-box {
+    grid-gap: 69px;
+  }
+  .photo-card {
+    h3 {
+      margin-top: 52px;
+      font-size: 24px;
+    }
+  }
+  .card-animal {
+    figure {
+      margin: 0 auto;
+
+      margin-bottom: -21px;
+      padding: 17px;
+    }
+  }
+
+  .volunteering {
+    height: 80%;
+
+    .promo-box {
+      &::before {
+        content: "";
+        width: 50vw;
+        height: 521px;
+      }
+      &::after {
+        content: "";
+        width: 464px;
+        height: 464px;
+      }
+    }
+    article {
+      padding-top: 0;
+    }
+  }
 }

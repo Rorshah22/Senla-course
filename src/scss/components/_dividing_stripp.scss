@@ -1,15 +1,15 @@
 /* рисуем разделительную линию */
-.dividing__stripp {
+.dividing-stripp {
   position: relative;
   text-align: center;
   overflow: hidden;
 }
 
-.dividing__stripp img {
+.dividing-stripp img {
   position: relative;
   width: 150px;
 }
-.dividing__stripp::before {
+.dividing-stripp::before {
   content: "";
   display: block;
   width: 50%;
@@ -19,7 +19,7 @@
   // right: 55.1vw;
   right: 58%;
 }
-.dividing__stripp::after {
+.dividing-stripp::after {
   display: block;
   width: 50%;
   content: "";
@@ -51,11 +51,11 @@
   }
 }
 .volunteering {
-  .dividing__stripp{
+  .dividing-stripp {
     margin-top: 73px;
-    img{
+    img {
       width: 85px;
     }
   }
-//
+  //
 }
