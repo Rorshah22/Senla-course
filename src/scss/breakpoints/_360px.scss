@@ -314,4 +314,29 @@
       background-size: 44px;
     }
   }
+  .footer {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    .container {
+      margin-top: 20px;
+      align-items: flex-start;
+      justify-content: space-between;
+      // flex-direction: column;
+    }
+  }
+  .footer-menu,
+  .footer-menu-2,
+  .footer-about {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  // .footer-menu-2 {
+  //
+  // }
+  .footer-items {
+    margin-left: 0;
+  }
 }

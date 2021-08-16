@@ -193,4 +193,30 @@
       background-size: 64px;
     }
   }
+  .footer {
+    .container {
+      max-width: 90%;
+      // flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+  .footer-about {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 0;
+    align-items: flex-end;
+  }
+  .footer-menu-2 {
+    margin-right: 10px;
+  }
+
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-top: 24px;
+  //   align-items: flex-end;
+  // }
+  // .footer-items {
+  //   margin: 0;
+  // }
 }
