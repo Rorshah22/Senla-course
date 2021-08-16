@@ -29,6 +29,7 @@
   //   }
   // }
   .header-background {
+    right: -34%;
     background-image: url(../images/design/dog_header_640.png);
   }
 
@@ -77,7 +78,7 @@
       background-size: 101.5% auto;
     }
   }
-  .promo__footer {
+  .promo-footer {
     margin-top: 49px;
     height: 100%;
     .container {
@@ -107,6 +108,8 @@
   .promo-footer-info {
     width: 100%;
     margin-right: 0px;
+    margin-top: 24px;
+    padding-bottom: 16px;
     .promo-h2 {
       padding-top: 33px;
       font-size: 16px;
@@ -135,20 +138,17 @@
     padding-right: 0px;
     padding-left: 0px;
     justify-content: space-evenly;
-    .help-items {
-      margin-left: 9px;
-      margin-right: 0%;
-      p {
-        width: 142px;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 9px;
-        margin-left: -20px;
-      }
-      .help-items-img {
-        width: 80px;
-        height: 80px;
-      }
+  }
+  .help-items {
+    p {
+      width: 142px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 9px;
+    }
+    .help-items-img {
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -199,5 +199,10 @@
   }
   .photo-card-footer {
     padding-left: 0;
+  }
+  .photo-card {
+    h3 {
+      margin-top: 0;
+    }
   }
 }

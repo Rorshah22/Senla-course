@@ -82,7 +82,7 @@
     }
   }
 
-  .promo__footer {
+  .promo-footer {
     margin-top: 28px;
     height: 100%;
     padding-bottom: 5%;
@@ -111,6 +111,9 @@
   }
   .promo-footer-info {
     width: 300px;
+    margin-top: 24px;
+    margin-right: 30px;
+    padding-bottom: 16.2px;
     .promo-h2 {
       padding-top: 36px;
       font-size: 16px;
@@ -134,20 +137,17 @@
     padding-right: 0px;
     padding-left: 0px;
     justify-content: space-evenly;
-    .help-items {
-      margin-left: 14px;
-      margin-right: 0px;
-      p {
-        width: 142px;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 7px;
-        margin-left: -13px;
-      }
-      .help-items-img {
-        width: 80px;
-        height: 80px;
-      }
+  }
+  .help-items {
+    p {
+      width: 142px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 7px;
+    }
+    .help-items-img {
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -165,6 +165,8 @@
     left: 70%;
   }
   .home-for {
+    // width: 875px;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-left: 0;
     margin-top: 16px;
@@ -216,6 +218,12 @@
   .photo-card-footer {
     padding-left: 0;
   }
+  .photo-card {
+    h3 {
+      margin-top: 0;
+    }
+  }
+
   .other-help,
   .auto-help {
     .container {

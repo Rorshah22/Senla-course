@@ -50,6 +50,10 @@
     width: 311px;
     line-height: 16px;
   }
+  .promo-h2 {
+    padding-left: 0;
+    font-size: 20px;
+  }
   .promo-text {
     font-size: 14px;
     width: 311px;
@@ -73,9 +77,9 @@
       background-size: 79.5% auto;
     }
   }
-  .promo__footer {
+  .promo-footer {
     margin-top: 43px;
-    height: 523px;
+    // height: 523px;
   }
 
   .image-wrapper {
@@ -99,10 +103,12 @@
     color: #ffc41e;
   }
   .promo-footer-info {
+    margin-top: 24px;
     width: 264px;
     margin-right: 0px;
+    margin-left: 39px;
+    padding-bottom: 24px;
     .promo__h2 {
-      padding-top: 18px;
       font-size: 20px;
       padding-left: 0;
     }
@@ -124,17 +130,15 @@
     padding-right: 17px;
     padding-left: 23px;
     justify-content: space-evenly;
-    .help-items {
-      margin-left: 14px;
-      margin-right: 3%;
-      p {
-        width: 140px;
-        font-size: 14px;
-      }
-      .help-items-img {
-        width: 110px;
-        height: 110px;
-      }
+  }
+  .help-items {
+    p {
+      width: 140px;
+      font-size: 14px;
+    }
+    .help-items-img {
+      width: 110px;
+      height: 110px;
     }
   }
   .home {
@@ -154,9 +158,10 @@
   .home-for {
     padding-left: 76px;
     margin-top: 38px;
+    justify-content: center;
   }
   .home-for-info {
-    width: 189px;
+    // max-width: 189px;
     padding-right: 47px;
     h3 {
       height: 10%;
@@ -174,6 +179,11 @@
 
       margin-bottom: -21px;
       padding: 17px;
+    }
+  }
+  .photo-card {
+    h3 {
+      margin-top: 0;
     }
   }
   .photo-card-footer {
