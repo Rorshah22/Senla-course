@@ -30,12 +30,15 @@
   top: 14px;
 }
 
-.menu-box__item {
-  display: none;
+.menu-box {
+  // display: none;
+  position: fixed;
+  // visibility: hidden;
 }
 
 .social-list {
-  display: flex;
+  // display: flex;
+  visibility: visible;
   margin-left: auto;
 }
 .menu-burger.open-menu span {
@@ -53,11 +56,14 @@
   transition: 0.4s;
 }
 .open {
-  display: block;
+  display: flex;
+  position: fixed;
+  visibility: visible;
+  z-index: 99;
 }
-.hidden {
-  visibility: hidden;
-}
+// .hidden {
+//   visibility: hidden;
+// }
 
 .menu-list {
   display: block;

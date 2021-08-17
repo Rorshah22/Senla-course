@@ -17,13 +17,15 @@ Header==================================================== */
 /* Элементы меню============================================== */
 .menu {
   display: inline-flex;
+  margin-top: 41px;
   position: relative;
   width: 100%;
+  justify-content: space-between;
 }
 .menu-box {
   display: flex;
-  margin-top: 40px;
-  width: 100%;
+
+  width: 635px;
   justify-content: space-between;
   align-items: center;
 }
@@ -65,7 +67,12 @@ Header==================================================== */
     border-color: $white;
   }
 }
-
+.social-list {
+  margin-right: 71px;
+  li:nth-child(2) {
+    margin-left: 0;
+  }
+}
 /* Картинка фона ======================================================*/
 .header-background {
   position: absolute;
