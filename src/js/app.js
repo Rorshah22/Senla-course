@@ -23,6 +23,7 @@ close.addEventListener('click', () => {
 });
 
 function exitMenu() {
+  btn.classList.remove('open-menu');
   document.querySelector('body').classList.remove('overflow');
   document.querySelector('.close').classList.remove('hidden');
   openMenu.classList.remove('open');
