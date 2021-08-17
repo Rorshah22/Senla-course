@@ -8,4 +8,5 @@ btn.addEventListener('click', () => {
   openMenu.forEach((element) => {
     element.classList.toggle('open');
   });
+  document.querySelector('.header').classList.toggle('header-background-menu');
 });

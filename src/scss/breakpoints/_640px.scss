@@ -1,5 +1,4 @@
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  @import "../components/burger2";
   .container {
     max-width: 382px / 640px * 100%;
   }
@@ -16,7 +15,7 @@
     width: 24px;
     height: 16px;
   }
-
+  @import "../components/burger2";
   .header-background {
     right: -34%;
     background-image: url(../images/design/dog_header_640.png);

@@ -35,11 +35,14 @@
   position: fixed;
   // visibility: hidden;
 }
-
+.header-background-menu {
+  background: #ffc41e;
+}
 .social-list {
   // display: flex;
-  visibility: visible;
-  margin-left: auto;
+  z-index: -1;
+  // visibility: visible;
+  // margin-left: auto;
 }
 .menu-burger.open-menu span {
   opacity: 0;
@@ -58,9 +61,11 @@
 .open {
   display: flex;
   position: fixed;
-  visibility: visible;
+  background-color: #fff;
   z-index: 99;
+  top: 0;
 }
+
 // .hidden {
 //   visibility: hidden;
 // }
