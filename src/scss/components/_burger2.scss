@@ -130,3 +130,14 @@
 .menu-box {
   margin-top: -7px;
 }
+.hidden {
+  display: inline;
+  top: 100%;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  z-index: 99;
+}
