@@ -270,19 +270,24 @@
       margin-top: 20px;
       align-items: flex-start;
       justify-content: space-between;
-      // flex-direction: column;
+      max-width: 382px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   .footer-menu,
-  .footer-menu-2,
+  .footer-menu:nth-child(2),
   .footer-about {
     margin-top: 0;
     flex-direction: column;
   }
-  // .footer-menu-2 {
-  //
-  // }
+  .footer-menu:nth-child(2) {
+    order: 1;
+  }
   .footer-items {
     margin-left: 0;
+  }
+  .footer-about {
+    align-items: flex-end;
   }
 }

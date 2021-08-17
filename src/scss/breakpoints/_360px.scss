@@ -289,8 +289,12 @@
     padding: 0 30px;
     .container {
       p {
+        margin-top: 24px;
         font-size: 16px;
       }
+    }
+    h3 {
+      margin-top: 32px;
     }
   }
   .about-web {
@@ -301,6 +305,7 @@
   }
   .thank {
     height: 267px;
+    margin-top: 24px;
   }
   .box-left {
     width: 68.021962%;
@@ -316,27 +321,30 @@
   }
   .footer {
     .container {
+      margin-top: 24px;
       flex-direction: column;
-    }
-  }
-  .footer {
-    .container {
-      margin-top: 20px;
-      align-items: flex-start;
       justify-content: space-between;
-      // flex-direction: column;
+
+      max-width: 300px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   .footer-menu,
-  .footer-menu-2,
+  .footer-menu:nth-child(2),
   .footer-about {
     margin-top: 0;
     flex-direction: column;
+    font-size: 13px;
   }
-  // .footer-menu-2 {
-  //
-  // }
+  .footer-menu:nth-child(2) {
+    order: 1;
+  }
   .footer-items {
+    font-size: 12px;
     margin-left: 0;
+  }
+  .footer-about {
+    align-items: flex-end;
   }
 }

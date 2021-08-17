@@ -11,7 +11,7 @@
   }
 }
 .footer-menu,
-.footer-menu-2 {
+.footer-menu:nth-child(2) {
   display: inline-flex;
   margin-top: 40px;
   padding: 0;
@@ -31,7 +31,7 @@
 .footer-about {
   display: flex;
   margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 0;
   li {
     border-bottom: 1px solid #474747;
     margin-left: 42px;
