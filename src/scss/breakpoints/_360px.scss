@@ -313,6 +313,10 @@
     }
   }
   .footer-menu,
+  .footer-menu:nth-child(2) {
+    align-items: flex-start;
+  }
+  .footer-menu,
   .footer-menu:nth-child(2),
   .footer-about {
     margin-top: 0;
