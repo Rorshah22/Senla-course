@@ -7,7 +7,9 @@
   h3 {
     font-size: 18px;
   }
-
+  .menu-box {
+    justify-content: flex-end;
+  }
   .menu-btn {
     top: 32px;
     left: 10.5%;
@@ -228,8 +230,8 @@
   .social-list {
     margin-left: 0;
     .icon {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
       font-size: 1em;
       margin-left: 28px;
       margin-right: 0;

@@ -7,15 +7,23 @@
   h3 {
     font-size: 18px;
   }
-
+  .menu-box {
+    justify-content: flex-end;
+  }
   .menu-btn {
     top: 32px;
     left: 3%;
     width: 24px;
     height: 16px;
   }
-
+  .social-list {
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
   .header-background {
+    right: -10%;
     background-image: url(../images/design/dog_header_360.png);
   }
   .promo {
