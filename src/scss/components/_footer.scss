@@ -2,6 +2,7 @@
 .footer {
   .container {
     display: flex;
+    justify-content: space-between;
   }
   p {
     margin-top: 24px;
@@ -16,13 +17,16 @@
   margin-top: 40px;
   padding: 0;
   list-style-type: none;
+  flex: auto;
+  justify-content: space-between;
+}
+.footer-menu:nth-child(2) {
+  justify-content: space-evenly;
 }
 .footer-items {
   font-weight: 600;
   font-size: 14px;
-  // margin-top: 40px;
   padding: 0;
-  margin-left: 47px;
   border-bottom: 1px solid #474747;
 }
 .first-item {
@@ -31,7 +35,9 @@
 .footer-about {
   display: flex;
   margin-top: 40px;
-  margin-left: 0;
+  align-items: flex-end;
+  flex: auto;
+  justify-content: flex-end;
   li {
     border-bottom: 1px solid #474747;
     margin-left: 42px;

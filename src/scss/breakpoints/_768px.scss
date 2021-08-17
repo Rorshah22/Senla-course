@@ -6,18 +6,6 @@
     max-width: 548px / 768px * 100%;
   }
 
-  // .header {
-  //   .social-list {
-  //     margin-left: 71%;
-
-  //     .icon {
-  //       width: 36px;
-  //       height: 36px;
-  //       font-size: 22px;
-  //       margin-right: 27px;
-  //     }
-  //   }
-  // }
   .header-background {
     background-image: url(../images/design/dog_header_768.png);
   }
@@ -32,10 +20,6 @@
       margin-right: 27px;
     }
   }
-
-  // .menu-btn {
-  //   left: 9.5%;
-  // }
 
   .promo {
     margin-top: -6px;
@@ -79,7 +63,6 @@
   }
   .promo-footer {
     margin-top: 43px;
-    // height: 523px;
   }
 
   .image-wrapper {
@@ -214,10 +197,7 @@
       max-width: 80%;
     }
   }
-  // .news-block {
-  // }
   .news-blog-text {
-    // width: 50%;
     padding-left: 18px;
   }
   .social-list {
@@ -241,7 +221,6 @@
       margin-top: 20px;
       align-items: flex-start;
       justify-content: space-between;
-      // flex-direction: column;
     }
   }
   .footer-menu,
@@ -251,9 +230,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  // .footer-menu-2 {
-  //
-  // }
   .footer-items {
     margin-left: 0;
   }

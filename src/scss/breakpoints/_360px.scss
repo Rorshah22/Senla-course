@@ -4,32 +4,17 @@
     max-width: 300px / 360px * 100%;
   }
 
-  // .menu-box {
-  //   display: none;
-  // }
   h3 {
     font-size: 18px;
   }
 
-  // @import "../components/burger";
   .menu-btn {
     top: 32px;
     left: 3%;
     width: 24px;
     height: 16px;
   }
-  // .header {
-  //   .social-list {
-  //     margin-top: 0px;
-  //     margin-left: (256px / 360px) * 100%;
-  //     .icon {
-  //       width: 32px;
-  //       height: 32px;
-  //       font-size: 19px;
-  //       margin-right: 19px;
-  //     }
-  //   }
-  // }
+
   .header-background {
     background-image: url(../images/design/dog_header_360.png);
   }
@@ -164,12 +149,7 @@
       left: 70%;
     }
   }
-  // .dividing-stripp::before {
-  //   right: 70%;
-  // }
-  // .dividing-stripp::after {
-  //   left: 70%;
-  // }
+
   .home-for {
     // width: 875px;
     flex-direction: column;
@@ -221,9 +201,6 @@
     }
   }
 
-  // .photo-card-footer {
-  //   padding-left: 0;
-  // }
   .photo-card {
     h3 {
       margin-top: 0;
@@ -271,7 +248,6 @@
   .news-blog-text {
     font-size: 14px;
     padding-left: 18px;
-    // width: 205px;
   }
   .social-list {
     margin-left: 0;
@@ -281,8 +257,6 @@
       font-size: 1em;
       margin-left: 18px;
       margin-right: 0;
-    }
-    ._icon-instagram {
     }
   }
   .about {

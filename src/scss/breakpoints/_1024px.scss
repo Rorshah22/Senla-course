@@ -124,7 +124,6 @@
     width: 100px;
   }
   .home-for {
-    // padding-left: 115px;
     h3 {
       height: 17%;
     }
@@ -196,7 +195,6 @@
   .footer {
     .container {
       max-width: 90%;
-      // flex-direction: column;
       justify-content: flex-start;
       flex-wrap: wrap;
     }
@@ -210,13 +208,4 @@
   .footer-menu:nth-child(2) {
     margin-right: 10px;
   }
-
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-top: 24px;
-  //   align-items: flex-end;
-  // }
-  // .footer-items {
-  //   margin: 0;
-  // }
 }
