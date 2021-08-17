@@ -17,15 +17,21 @@
     height: 16px;
   }
   @import "../components/burger2";
-  .social-list {
-    .icon {
-      width: 32px;
-      height: 32px;
-    }
+  .menu {
+    margin-top: 0;
   }
+  .menu-box__item.social-list {
+    margin-top: -11px;
+    margin-left: auto;
+    margin-right: -3px;
+  }
+
   .header-background {
     right: -10%;
     background-image: url(../images/design/dog_header_360.png);
+  }
+  .main {
+    margin-top: 0;
   }
   .promo {
     margin-top: -12px;
@@ -45,6 +51,8 @@
   }
 
   .promo-title {
+    margin-top: 30px;
+
     font-size: 30px;
     line-height: 36px;
   }
@@ -260,6 +268,7 @@
   }
   .social-list {
     margin-left: 0;
+
     .icon {
       width: 32px;
       height: 32px;
