@@ -28,3 +28,11 @@ function exitMenu() {
   document.querySelector('.close').classList.remove('hidden');
   openMenu.classList.remove('open');
 }
+
+const cards = document.querySelectorAll('.card-animal');
+
+cards.forEach((card, i) => {
+  if (i > 2) {
+    card.classList.add('hidden');
+  }
+});

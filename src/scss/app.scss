@@ -1,10 +1,10 @@
-@import "base/normalize";
-@import "base/fonts";
-@import "components/header";
-@import "components/button";
-@import "components/footer";
-@import "components/dividing_stripp";
-@import "inner";
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'components/header';
+@import 'components/button';
+@import 'components/footer';
+@import 'components/dividing_stripp';
+@import 'inner';
 
 /*Подключаем общие стили==================================*/
 body {
@@ -127,7 +127,7 @@ ul {
   left: -25px;
 }
 .image-wrapper::before {
-  content: "";
+  content: '';
   width: 50vw;
   position: absolute;
   right: 50%;
@@ -152,7 +152,7 @@ ul {
   width: 45%;
 }
 .image-wrapper-secondary::after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 100%;
   background-image: url(../images/design/catInPriason.png);
@@ -173,7 +173,7 @@ ul {
 }
 
 .circle-big::after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 100%;
   height: 0;
@@ -282,7 +282,7 @@ ul {
 }
 
 /* Section photo__card============================================== */
-.photo-card {
+.photo__card {
   h3 {
     text-align: center;
     margin-top: 56px;
@@ -292,71 +292,96 @@ ul {
   }
 }
 /* Делаем карточки на гридах */
-.photo-card-box {
+.photo__card-box {
+  position: relative;
+  height: 656px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 16px;
   justify-items: center;
-  align-items: center;
+  // align-items: center;
 }
 .card-animal {
+  // position: absolute;
   display: grid;
   border: 1px solid #d6d6d6;
   border-radius: 5px;
-  height: 695px;
+  height: 600px;
+  // height: 695px;
   margin-top: 34px;
   margin-bottom: 8px;
   margin-right: 19px;
   max-width: 368px;
   background-color: #ffffff;
+
   img {
-    width: 100%;
+    padding: 10px;
+    // width: 100%;
   }
-}
-.card-animal {
   figure {
     margin: 0 auto;
     margin-top: 12px;
     margin-bottom: -24px;
   }
-}
-.card-animal figcaption {
-  padding-top: 2px;
-  padding-bottom: 10px;
-  font-weight: 500;
-  font-size: 22px;
-  text-align: center;
-  color: #242424;
-  border-bottom: 1px solid #d6d6d6;
-}
-.card-animal button {
-  margin: 0 auto;
+  figcaption {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #242424;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  button {
+    margin: 0 auto;
+  }
+  span {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 16px;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    // padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 20px;
+  }
+  p {
+    margin: 0px;
+    // margin-top: -19px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 95px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 
-.card-animal span {
-  margin-top: 5px;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #6b6b6b;
-  line-height: 20px;
+.card-text {
+  margin-top: 23px;
 }
-.card-animal p {
-  margin: 0px;
-  margin-top: -19px;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 95px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
+.card-animal {
+  transition: all 0.2s ease;
+  .btn,
+  .btn-secondary {
+    display: none;
+    transition: all 2s ease;
+    /* padding-top:10px; */
+  }
 }
-.card-animal .btn {
-  position: relative;
-  top: 11px;
-  /* padding-top:10px; */
+.card-animal:hover {
+  height: 695px;
+  .btn,
+  .btn-secondary {
+    display: block;
+
+    position: relative;
+    top: 11px;
+  }
 }
+
 .card-animal .btn-secondary {
   position: relative;
   top: 3px;
@@ -380,7 +405,7 @@ ul {
 }
 
 .arrow::after {
-  content: "";
+  content: '';
   display: inline-block;
   margin-top: 13px;
   margin-left: 13px;
@@ -392,6 +417,7 @@ ul {
   position: absolute;
   padding: 2px;
   transform: rotate(45deg);
+  z-index: -1;
 }
 .photo-card-footer {
   display: flex;
@@ -504,7 +530,7 @@ ul {
       list-style-position: inside;
     }
     li:before {
-      content: "•";
+      content: '•';
       margin-right: 5px;
     }
   }
@@ -547,7 +573,7 @@ ul {
     top: -7px;
     position: relative;
     &::before {
-      content: "";
+      content: '';
       width: 50vw;
       height: 521px;
       position: absolute;
@@ -559,7 +585,7 @@ ul {
   }
   .promo-box-circle {
     &::after {
-      content: "";
+      content: '';
       display: block;
       padding-bottom: 100%;
       height: 0;
@@ -718,7 +744,7 @@ ul {
   margin-top: 119px / 1366px * 100%;
   margin-bottom: 101px / 1366px * 100%;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     width: 100%;
@@ -729,7 +755,7 @@ ul {
     border-bottom-right-radius: 34vw;
   }
   .img-foot {
-    background-image: url("../images/design/img-foot.svg");
+    background-image: url('../images/design/img-foot.svg');
     position: absolute;
     height: 100%;
     background-repeat: no-repeat;
@@ -748,7 +774,11 @@ ul {
   }
 }
 // Breakpoints
-@import "breakpoints/1024px";
-@import "breakpoints/768px";
-@import "breakpoints/640px";
-@import "breakpoints/360px";
+@import 'breakpoints/1024px';
+@import 'breakpoints/768px';
+@import 'breakpoints/640px';
+@import 'breakpoints/360px';
+
+.hidden {
+  display: none;
+}
